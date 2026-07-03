@@ -30,7 +30,8 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 ## Próximos passos
 
 - Sprint 1 criou `project-discovery/`.
-- Sprint 2 deve adicionar protocolos para Product e Architecture quando os engines forem criados.
+- Sprint 2 adicionou protocolos para Product e Architecture.
+- Sprint 3 adicionou protocolos para Decision, Risk e Optimization.
 
 ## Protocolos disponíveis
 
@@ -40,3 +41,9 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 
 - `product-definition/`: discovery-to-PRD e PRD review.
 - `architecture-review/`: architecture decision protocol e review checklist.
+
+## Sprint 3
+
+- `decision-review/`: ADR decision protocol e revisão estruturada de decisões.
+- `risk-assessment/`: assessment, aceitação e revisão de riscos.
+- `optimization-review/`: revisão de custo, complexidade, escalabilidade e custo de AI.

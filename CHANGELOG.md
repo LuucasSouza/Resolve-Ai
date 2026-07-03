@@ -21,6 +21,20 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Sprint 3 executada.
+- Criado Decision Engine.
+- Criados Decision lifecycle, Decision object model, quality gates e anti-patterns.
+- Criados Decision Framework, weighted decision matrix e decision confidence model.
+- Criado ADR Decision Protocol e templates de decisão e ADR.
+- Criado Risk Engine.
+- Criados Risk lifecycle, taxonomy, object model e quality gates.
+- Criados Risk Framework, risk register standard, scoring model e modelos de risco de segurança, compliance, vendor e AI.
+- Criado Optimization Engine.
+- Criados Optimization lifecycle, object model e quality gates.
+- Criados Optimization Framework e modelos de custo, complexidade, escalabilidade e custo de AI.
+- Criado playbook integrado de Decision, Risk and Optimization.
+- Criadas ADRs 0019 a 0026.
+- Criados handoff e relatório de validação da Sprint 3.
 - Sprint 2 executada.
 - Criado Product Engine.
 - Criados Product lifecycle, Product Readiness Levels, quality gates e handoff contract.

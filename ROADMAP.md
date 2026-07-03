@@ -155,7 +155,7 @@ Criar os módulos responsáveis por transformar discovery em produto e arquitetu
 
 # Sprint 3 — Decision, Risk and Optimization
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -170,10 +170,17 @@ Criar mecanismos de decisão, risco e otimização.
 - Risk Register Template.
 - Decision Matrix Template.
 - Cost and complexity heuristics.
+- Decision Framework, weighted decision matrix e confidence model.
+- Risk Framework, risk taxonomy e risk scoring model.
+- Optimization Framework para custo, complexidade, escalabilidade e AI cost.
+- Playbook integrado de Decision, Risk and Optimization.
+- ADRs 0019 a 0026.
 
 ---
 
 # Sprint 4 — Execution, Documentation, Handoff and Reflection
+
+Status: **Next**
 
 ## Objetivo
 

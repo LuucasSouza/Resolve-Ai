@@ -30,7 +30,8 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 ## Próximos passos
 
 - Sprint 1 criou `discovery/` e `context/`.
-- Sprint 2 deve criar templates de produto e arquitetura.
+- Sprint 2 criou templates de produto e arquitetura.
+- Sprint 3 criou templates de decisão, risco, ADR e otimização.
 
 ## Templates disponíveis
 
@@ -42,3 +43,10 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - `product/`: PRD, MVP, roadmap, backlog, handoff e scope matrix.
 - `architecture/`: architecture overview, decision matrix, quality scenarios, domain model e integration map.
 - `adr/`: extended ADR template.
+
+## Sprint 3
+
+- `decision/`: decision record, decision matrix e decision log.
+- `risk/`: risk register, assessment, acceptance, review e checklists especializados.
+- `optimization/`: optimization review, cost model, complexity assessment e scalability assessment.
+- `adr/`: ADR template, ADR lite e decision log entry.

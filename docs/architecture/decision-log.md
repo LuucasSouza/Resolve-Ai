@@ -19,3 +19,11 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0016 | Adopt Architecture Readiness Levels | Accepted | 2026-07-03 | High | Sprint 3 |
 | ADR-0017 | Adopt Product to Architecture Handoff | Accepted | 2026-07-03 | High | Sprint 3 |
 | ADR-0018 | Adopt C4-Inspired Architecture Views | Accepted | 2026-07-03 | High | Sprint 3 |
+| ADR-0019 | Adopt Decision Engine | Accepted | 2026-07-03 | Medium | Sprint 4 |
+| ADR-0020 | Adopt Weighted Decision Matrix | Accepted | 2026-07-03 | High | Sprint 4 |
+| ADR-0021 | Adopt ADR Decision Lifecycle | Accepted | 2026-07-03 | High | Sprint 4 |
+| ADR-0022 | Adopt Risk Engine | Accepted | 2026-07-03 | Medium | Sprint 4 |
+| ADR-0023 | Adopt Risk Register Standard | Accepted | 2026-07-03 | High | Sprint 4 |
+| ADR-0024 | Adopt Risk Classification Model | Accepted | 2026-07-03 | Medium | Sprint 4 |
+| ADR-0025 | Adopt Optimization Engine | Accepted | 2026-07-03 | Medium | Sprint 4 |
+| ADR-0026 | Adopt Cost Complexity Scalability Optimization | Accepted | 2026-07-03 | Medium | Sprint 4 |

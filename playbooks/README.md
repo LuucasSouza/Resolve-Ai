@@ -30,8 +30,13 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 ## Próximos passos
 
 - Sprint 1 criou `project-discovery/`.
-- Sprint 2 deve criar playbooks para Product e Architecture.
+- Sprint 2 criou playbooks para Product e Architecture.
+- Sprint 3 criou playbook integrado de Decision, Risk and Optimization.
 
 ## Playbooks disponíveis
 
 - `project-discovery/`: guia prático de discovery com exemplos.
+
+## Sprint 3
+
+- `decision-risk-optimization/`: playbook integrado para decision review, risk review, optimization review e execution readiness.

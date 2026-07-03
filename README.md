@@ -205,7 +205,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Sprint 2 concluída**
+Status atual: **Sprint 3 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -224,7 +224,16 @@ Sprint 2 adicionou Product Engine e Architecture Engine:
 - ADRs 0012 a 0018;
 - relatório de validação em `docs/sprints/sprint-2-validation-report.md`.
 
-Próxima etapa: **Sprint 3 — Decision, Risk and Optimization**.
+Sprint 3 adicionou Decision Engine, Risk Engine e Optimization Engine:
+
+- Decision Engine, lifecycle, object model, quality gates e anti-patterns;
+- Risk Engine, taxonomy, risk register, scoring model e modelos de segurança, compliance, vendor e AI;
+- Optimization Engine, modelos de custo, complexidade, escalabilidade e custo de AI;
+- playbook integrado de Decision, Risk and Optimization;
+- ADRs 0019 a 0026;
+- relatório de validação em `docs/sprints/sprint-3-validation-report.md`.
+
+Próxima etapa: **Sprint 4 — Execution, Documentation, Handoff and Reflection**.
 
 ---
 

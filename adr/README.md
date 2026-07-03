@@ -47,6 +47,14 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0016-adopt-architecture-readiness-levels.md`
 - `0017-adopt-product-to-architecture-handoff.md`
 - `0018-adopt-c4-inspired-architecture-views.md`
+- `0019-adopt-decision-engine.md`
+- `0020-adopt-weighted-decision-matrix.md`
+- `0021-adopt-adr-decision-lifecycle.md`
+- `0022-adopt-risk-engine.md`
+- `0023-adopt-risk-register-standard.md`
+- `0024-adopt-risk-classification-model.md`
+- `0025-adopt-optimization-engine.md`
+- `0026-adopt-cost-complexity-scalability-optimization.md`
 
 ## Próximos passos
 

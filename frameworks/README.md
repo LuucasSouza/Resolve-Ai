@@ -30,7 +30,8 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Próximos passos
 
 - Sprint 1 criou `discovery-framework/`.
-- Sprint 2 deve criar frameworks de produto e arquitetura quando necessário.
+- Sprint 2 criou frameworks de produto e arquitetura.
+- Sprint 3 criou frameworks de decisão, risco e otimização.
 
 ## Frameworks disponíveis
 
@@ -40,3 +41,9 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 
 - `product-framework/`: MVP scope, capability mapping e priorização.
 - `architecture-framework/`: architecture thinking, quality attributes, trade-offs e domain/integration modeling.
+
+## Sprint 3
+
+- `decision-framework/`: decision framework, weighted decision matrix e confidence model.
+- `risk-framework/`: risk assessment, risk register, scoring e modelos especializados.
+- `optimization-framework/`: otimização de custo, complexidade, escalabilidade e custo de AI.
