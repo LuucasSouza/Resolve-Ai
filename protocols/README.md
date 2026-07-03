@@ -35,3 +35,8 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 ## Protocolos disponíveis
 
 - `project-discovery/`: protocolo executável de discovery.
+
+## Sprint 2
+
+- `product-definition/`: discovery-to-PRD e PRD review.
+- `architecture-review/`: architecture decision protocol e review checklist.

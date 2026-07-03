@@ -37,3 +37,12 @@ Core Maintainers coordenam consistência entre engines e protocolos.
 
 - `core/`: identidade, kernel, lifecycle, object model, context model e quality gates.
 - `discovery/`: engine de discovery, pipeline, quality gates e checklists.
+
+## Sprint 2
+
+- `product/`: engine de produto, PRD, MVP, roadmap, backlog e handoff para arquitetura.
+- `architecture/`: engine de arquitetura, views, drivers, ADRs, domain/integration modeling e handoff.
+
+## Próxima etapa
+
+- Sprint 3 deve criar Decision Engine, Risk Engine e Optimization Engine.

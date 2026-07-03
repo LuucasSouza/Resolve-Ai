@@ -40,6 +40,13 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0009-adopt-context-package-standard.md`
 - `0010-adopt-discovery-engine-as-first-operating-engine.md`
 - `0011-adopt-discovery-depth-levels.md`
+- `0012-adopt-product-engine.md`
+- `0013-adopt-mvp-scope-framework.md`
+- `0014-adopt-architecture-engine.md`
+- `0015-adopt-architecture-decision-protocol.md`
+- `0016-adopt-architecture-readiness-levels.md`
+- `0017-adopt-product-to-architecture-handoff.md`
+- `0018-adopt-c4-inspired-architecture-views.md`
 
 ## Próximos passos
 

@@ -189,7 +189,7 @@ Protocolos, exemplos reais, anti-patterns, best practices e consolidação final
 
 ---
 
-## Como iniciar com Codex no terminal
+## Como iniciar com IA no terminal
 
 Coloque `PROJECT_BOOTSTRAP.md` na raiz do projeto e execute no terminal/Codex:
 
@@ -205,7 +205,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Sprint 1 concluída**
+Status atual: **Sprint 2 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -216,7 +216,15 @@ Sprint 1 criou a primeira camada funcional do AI-SEOS:
 - ADRs 0007 a 0011;
 - relatório de validação em `docs/sprints/sprint-1-validation-report.md`.
 
-Próxima etapa: **Sprint 2 — Product Engine and Architecture Engine**.
+Sprint 2 adicionou Product Engine e Architecture Engine:
+
+- Product Engine, PRD protocol, MVP Scope Framework, roadmap e backlog standards;
+- Architecture Engine, architecture decision protocol, readiness levels e architecture view standard;
+- templates de produto, arquitetura e ADR estendido;
+- ADRs 0012 a 0018;
+- relatório de validação em `docs/sprints/sprint-2-validation-report.md`.
+
+Próxima etapa: **Sprint 3 — Decision, Risk and Optimization**.
 
 ---
 

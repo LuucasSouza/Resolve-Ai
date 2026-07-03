@@ -21,6 +21,18 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Sprint 2 executada.
+- Criado Product Engine.
+- Criados Product lifecycle, Product Readiness Levels, quality gates e handoff contract.
+- Criados Product Framework, MVP Scope Framework, scope decision matrix, capability mapping e prioritization framework.
+- Criados Product Definition Protocols e templates de PRD, MVP, roadmap, backlog e handoff.
+- Criado Architecture Engine.
+- Criados Architecture lifecycle, Architecture Readiness Levels, quality gates e handoff contract.
+- Criados Architecture Framework, Architecture Decision Protocol, Architecture View Standard e templates de arquitetura.
+- Criados Domain Modeling Standard e Integration Modeling Standard.
+- Criado template ADR estendido e architecture decision log.
+- Criadas ADRs 0012 a 0018.
+- Criado relatório de validação da Sprint 2.
 - Sprint 1 executada.
 - Criado Core Identity do AI-SEOS.
 - Criado Operating System Kernel.

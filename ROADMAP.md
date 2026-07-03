@@ -118,7 +118,7 @@ playbooks/project-discovery/
 
 # Sprint 2 — Product Engine and Architecture Engine
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -134,10 +134,28 @@ Criar os módulos responsáveis por transformar discovery em produto e arquitetu
 - C4/Mermaid guidance.
 - Domain modeling guide.
 - Architecture decision matrix.
+- Product lifecycle and readiness levels.
+- Architecture lifecycle and readiness levels.
+- Product to Architecture handoff.
+- ADRs 0012 a 0018.
+- Sprint 2 validation report.
+
+## Arquivos principais
+
+- `operating-system/product/product-engine.md`
+- `operating-system/product/product-handoff-contract.md`
+- `frameworks/product-framework/mvp-scope-framework.md`
+- `protocols/product-definition/discovery-to-prd-protocol.md`
+- `operating-system/architecture/architecture-engine.md`
+- `operating-system/architecture/architecture-handoff-contract.md`
+- `protocols/architecture-review/architecture-decision-protocol.md`
+- `docs/sprints/sprint-2-validation-report.md`
 
 ---
 
 # Sprint 3 — Decision, Risk and Optimization
+
+Status: **Next**
 
 ## Objetivo
 

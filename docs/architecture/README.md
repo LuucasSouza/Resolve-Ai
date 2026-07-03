@@ -31,3 +31,12 @@ Architecture Maintainers mantêm coerência com `ARCHITECTURE_VISION.md` e ADRs.
 
 - Criar mapa de interfaces entre engines.
 - Adicionar diagramas Mermaid consolidados.
+
+## Sprint 2
+
+- `architecture-view-standard.md`
+- `decision-log.md`
+
+## Próxima etapa
+
+- Sprint 3 deve conectar decision log ao Decision Engine.

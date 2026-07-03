@@ -36,3 +36,9 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 
 - `discovery/`: discovery document, registers, MVP boundary, handoff e checklists.
 - `context/`: context package, assumption register e constraint register.
+
+## Sprint 2
+
+- `product/`: PRD, MVP, roadmap, backlog, handoff e scope matrix.
+- `architecture/`: architecture overview, decision matrix, quality scenarios, domain model e integration map.
+- `adr/`: extended ADR template.

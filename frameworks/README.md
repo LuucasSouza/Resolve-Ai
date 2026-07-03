@@ -35,3 +35,8 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Frameworks disponíveis
 
 - `discovery-framework/`: estrutura reutilizável para discovery.
+
+## Sprint 2
+
+- `product-framework/`: MVP scope, capability mapping e priorização.
+- `architecture-framework/`: architecture thinking, quality attributes, trade-offs e domain/integration modeling.
