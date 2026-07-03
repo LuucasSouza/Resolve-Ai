@@ -30,6 +30,10 @@ Core Maintainers coordenam consistência entre engines e protocolos.
 
 ## Próximos passos
 
-- Criar Core Identity.
-- Criar Discovery Engine.
-- Definir Quality Gates iniciais.
+- Sprint 1 criou `core/` e `discovery/`.
+- Próxima etapa: criar Product Engine e Architecture Engine na Sprint 2.
+
+## Módulos ativos
+
+- `core/`: identidade, kernel, lifecycle, object model, context model e quality gates.
+- `discovery/`: engine de discovery, pipeline, quality gates e checklists.

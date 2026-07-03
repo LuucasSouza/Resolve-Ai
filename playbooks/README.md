@@ -29,4 +29,9 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 
 ## Próximos passos
 
-- Criar playbook de Project Discovery.
+- Sprint 1 criou `project-discovery/`.
+- Sprint 2 deve criar playbooks para Product e Architecture.
+
+## Playbooks disponíveis
+
+- `project-discovery/`: guia prático de discovery com exemplos.

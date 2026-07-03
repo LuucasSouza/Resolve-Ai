@@ -65,6 +65,8 @@ Criar a fundação do projeto.
 
 # Sprint 1 — AI CTO & Solution Architect Core
 
+Status: **Complete**
+
 ## Objetivo
 
 Construir o núcleo do agente AI CTO & Solution Architect.
@@ -79,6 +81,8 @@ Construir o núcleo do agente AI CTO & Solution Architect.
 - Discovery playbooks.
 - Quality gates.
 - Handoff para Product e Architecture.
+- Sprint 1 validation report.
+- ADRs 0007 a 0011.
 
 ## Diretórios previstos
 
@@ -100,9 +104,21 @@ playbooks/project-discovery/
 - Existem exemplos.
 - Existem ADRs relevantes.
 
+## Arquivos principais
+
+- `operating-system/core/core-identity.md`
+- `operating-system/core/operating-system-kernel.md`
+- `operating-system/core/context-and-knowledge-model.md`
+- `agents/ai-cto/identity.md`
+- `operating-system/discovery/discovery-engine.md`
+- `protocols/project-discovery/discovery-protocol.md`
+- `docs/sprints/sprint-1-validation-report.md`
+
 ---
 
 # Sprint 2 — Product Engine and Architecture Engine
+
+Status: **Next**
 
 ## Objetivo
 

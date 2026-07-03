@@ -35,6 +35,11 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0004-adopt-adr-driven-decisions.md`
 - `0005-adopt-human-ai-collaboration-model.md`
 - `0006-adopt-mit-license.md`
+- `0007-adopt-ai-cto-as-first-specialized-agent.md`
+- `0008-adopt-operating-system-kernel-model.md`
+- `0009-adopt-context-package-standard.md`
+- `0010-adopt-discovery-engine-as-first-operating-engine.md`
+- `0011-adopt-discovery-depth-levels.md`
 
 ## Próximos passos
 

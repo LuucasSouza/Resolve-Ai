@@ -205,9 +205,18 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Bootstrap / Sprint 0**
+Status atual: **Sprint 1 concluída**
 
-Este projeto está em fase inicial e sua estrutura deve evoluir rapidamente.
+Sprint 1 criou a primeira camada funcional do AI-SEOS:
+
+- Core Identity e Operating System Kernel;
+- Context and Knowledge Model;
+- AI CTO & Solution Architect Agent;
+- Discovery Engine, Protocol, Templates, Checklists e Playbook;
+- ADRs 0007 a 0011;
+- relatório de validação em `docs/sprints/sprint-1-validation-report.md`.
+
+Próxima etapa: **Sprint 2 — Product Engine and Architecture Engine**.
 
 ---
 

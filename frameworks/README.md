@@ -29,4 +29,9 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 
 ## Próximos passos
 
-- Criar Discovery Framework na Sprint 1.
+- Sprint 1 criou `discovery-framework/`.
+- Sprint 2 deve criar frameworks de produto e arquitetura quando necessário.
+
+## Frameworks disponíveis
+
+- `discovery-framework/`: estrutura reutilizável para discovery.

@@ -29,5 +29,10 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 
 ## Próximos passos
 
-- Criar templates de discovery na Sprint 1.
-- Criar template canônico de ADR.
+- Sprint 1 criou `discovery/` e `context/`.
+- Sprint 2 deve criar templates de produto e arquitetura.
+
+## Templates disponíveis
+
+- `discovery/`: discovery document, registers, MVP boundary, handoff e checklists.
+- `context/`: context package, assumption register e constraint register.

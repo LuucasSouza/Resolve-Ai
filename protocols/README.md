@@ -29,5 +29,9 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 
 ## Próximos passos
 
-- Criar Project Discovery Protocol.
-- Criar ADR Protocol.
+- Sprint 1 criou `project-discovery/`.
+- Sprint 2 deve adicionar protocolos para Product e Architecture quando os engines forem criados.
+
+## Protocolos disponíveis
+
+- `project-discovery/`: protocolo executável de discovery.

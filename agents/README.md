@@ -29,4 +29,9 @@ Agent Maintainers mantêm consistência entre agentes, protocolos, templates e q
 
 ## Próximos passos
 
-- Criar agente AI CTO & Solution Architect na Sprint 1.
+- Sprint 1 criou `ai-cto/`.
+- Sprint 2 deve definir interações com Product Agent e Architecture Agent.
+
+## Agentes disponíveis
+
+- `ai-cto/`: AI CTO & Solution Architect Agent.
