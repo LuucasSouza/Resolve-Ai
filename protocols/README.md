@@ -104,3 +104,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 ## Phase 6
 
 - `resolve-ai planejar` transforma diagnóstico em plano incremental, backlog, sprints, prompts seguros e checklist de validação.
+
+## Phase 7
+
+- `resolve-ai preparar` transforma plano/backlog em pacote de execução seguro, exigindo aprovação humana e mantendo `canAutoExecute: false`.

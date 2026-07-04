@@ -129,3 +129,7 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 ## Phase 6
 
 - `resolve-ai planejar` materializa templates de planejamento `10` a `14` em `docs/resolve-ai/`, preservando arquivos existentes por padrão.
+
+## Phase 7
+
+- `resolve-ai preparar` materializa templates de pacote de execução `15` a `19` em `docs/resolve-ai/`, preservando arquivos existentes por padrão.

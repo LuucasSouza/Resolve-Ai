@@ -32,6 +32,19 @@ Confiança do plano: ${state.planningConfidence ?? "não informada"}
 Próxima ação planejada: ${state.nextRecommendedAction ?? "revisar docs/resolve-ai/10-plano-de-continuacao.md"}
 `
     : "";
+  const preparedSummary = state.ultimoPreparo
+    ? `
+Tarefa preparada:
+- ${state.ultimoPreparo.tarefa}
+- Risco: ${state.ultimoPreparo.riskLevel}
+- Aprovação humana: necessária
+- Autoexecução: não
+
+Próximo passo:
+Leia docs/resolve-ai/16-prompt-de-implementacao.md.
+`
+    : "";
+  const disabledSummary = state.active === false ? "\nResolve Aí está desligado. Para preparar com contexto completo, rode: resolve-ai ligar\n" : "";
 
   if (state.active) {
     print(`
@@ -42,6 +55,7 @@ Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 ${diagnosticSummary}
 ${planningSummary}
+${preparedSummary}
 `);
     return;
   }
@@ -54,6 +68,8 @@ Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 ${diagnosticSummary}
 ${planningSummary}
+${preparedSummary}
+${disabledSummary}
 
 Para ligar:
   resolve-ai ligar

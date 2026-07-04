@@ -15,6 +15,9 @@ Esta versão implementa apenas comandos locais e não destrutivos:
 - `resolve-ai planejar`
 - `resolve-ai plano`
 - `resolve-ai planejamento`
+- `resolve-ai preparar`
+- `resolve-ai tarefa`
+- `resolve-ai executar`
 - `resolve-ai ligar`
 - `resolve-ai desligar`
 - `resolve-ai status`
@@ -26,6 +29,7 @@ node packages/resolve-ai-cli/dist/index.js ajuda
 node packages/resolve-ai-cli/dist/index.js começar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
 node packages/resolve-ai-cli/dist/index.js planejar
+node packages/resolve-ai-cli/dist/index.js preparar
 node packages/resolve-ai-cli/dist/index.js status
 node packages/resolve-ai-cli/dist/index.js ligar
 node packages/resolve-ai-cli/dist/index.js desligar
@@ -81,6 +85,20 @@ docs/resolve-ai/14-checklist-de-validacao.md
 ```
 
 Também atualiza `.resolve-ai/state.json` com último planejamento, confiança, documentos gerados e próxima ação recomendada.
+
+## O Que o Comando `preparar` Cria
+
+O comando seleciona uma tarefa pequena e segura e gera um pacote de execução. Ele não executa a tarefa.
+
+```text
+docs/resolve-ai/15-tarefa-preparada.md
+docs/resolve-ai/16-prompt-de-implementacao.md
+docs/resolve-ai/17-plano-de-validacao-da-tarefa.md
+docs/resolve-ai/18-riscos-da-execucao.md
+docs/resolve-ai/19-handoff-de-execucao.md
+```
+
+`canAutoExecute` é sempre `false` nesta fase.
 
 ## Fora de Escopo
 

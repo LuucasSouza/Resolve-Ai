@@ -4,6 +4,7 @@ import { desligarCommand } from "./commands/desligar.js";
 import { diagnosticarCommand } from "./commands/diagnosticar.js";
 import { ligarCommand } from "./commands/ligar.js";
 import { planejarCommand } from "./commands/planejar.js";
+import { prepararCommand } from "./commands/preparar.js";
 import { statusCommand } from "./commands/status.js";
 import { error } from "./core/output.js";
 
@@ -33,6 +34,11 @@ export function run(argv = process.argv.slice(2), root = process.cwd()) {
       case "plano":
       case "planejamento":
         planejarCommand(root);
+        return 0;
+      case "preparar":
+      case "tarefa":
+      case "executar":
+        prepararCommand(root, command);
         return 0;
       case "desligar":
         desligarCommand(root);

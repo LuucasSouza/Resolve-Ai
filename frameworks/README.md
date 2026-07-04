@@ -103,3 +103,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Phase 6
 
 - A CLI passa a aplicar planejamento guiado, conectando diagnóstico, backlog, sprints, prompts e checklist de validação.
+
+## Phase 7
+
+- A CLI passa a preparar uma tarefa segura com pacote de execução, prompt, validação, riscos e handoff, sem executar código.

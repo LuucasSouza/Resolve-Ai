@@ -473,19 +473,38 @@ Implementar `resolve-ai planejar`, lendo `docs/resolve-ai/` e preparando plano i
 
 # Phase 7 — Resolve Aí Guided Execution Prep
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
 Preparar execução segura de uma tarefa do backlog, ainda sem automação destrutiva.
 
-## Entregáveis previstos
+## Entregáveis
 
 - Decisão sobre comando público (`executar`, `resolver` ou equivalente).
 - Seleção de uma tarefa do backlog.
 - Pacote de execução aprovado.
 - Prompt seguro por tarefa.
 - Checklist de validação e handoff pós-execução.
+- ADRs 0126 a 0135.
+
+---
+
+# Phase 8 — Resolve Aí Guided Review and Validation
+
+Status: **Next**
+
+## Objetivo
+
+Validar uma tarefa executada, comparar com pacote de execução, atualizar status, gerar relatório e preparar handoff.
+
+## Entregáveis previstos
+
+- Comando provável `resolve-ai validar`.
+- Relatório de validação da tarefa.
+- Comparação com pacote de execução.
+- Atualização de estado.
+- Handoff pós-execução.
 
 ---
 

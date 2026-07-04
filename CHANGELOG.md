@@ -21,6 +21,16 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 7 executada.
+- Implementado comando `resolve-ai preparar`.
+- Implementados aliases `tarefa` e `executar`.
+- Criada seleção segura de tarefa a partir de diagnóstico/planejamento.
+- Criada geração dos documentos `docs/resolve-ai/15` a `19`.
+- Atualizado `.resolve-ai/state.json` com `ultimoPreparo` e `canAutoExecute: false`.
+- Atualizado `resolve-ai status` para mostrar tarefa preparada.
+- Criados testes automatizados para preparação de execução.
+- Criadas ADRs 0126 a 0135.
+- Criados Phase 7 handoff, validation report e retrospective.
 - Phase 6 executada.
 - Implementado comando `resolve-ai planejar`.
 - Implementados aliases `plano` e `planejamento`.

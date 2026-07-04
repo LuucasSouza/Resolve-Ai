@@ -107,3 +107,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0123 | Adopt Status Integration for Planning State | Accepted | 2026-07-04 | Medium | Phase 7 |
 | ADR-0124 | Defer Force Update Planning Overwrite Options | Accepted | 2026-07-04 | High | Phase 7 |
 | ADR-0125 | Prepare Phase 7 Implementation Guidance | Accepted | 2026-07-04 | Medium | Phase 7 |
+| ADR-0126 | Adopt Guided Execution Prep | Accepted | 2026-07-04 | Medium | Phase 8 |
+| ADR-0127 | Use preparar as Public Command | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0128 | Generate Execution Package Docs 15 to 19 | Accepted | 2026-07-04 | Medium | Phase 8 |
+| ADR-0129 | Keep Execution Read-Only in Phase 7 | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0130 | Prioritize Critical Risks Before Features | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0131 | Require Human Approval Before Implementation | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0132 | Update Runtime State with Prepared Task | Accepted | 2026-07-04 | Medium | Phase 8 |
+| ADR-0133 | Extend Status with Prepared Task Summary | Accepted | 2026-07-04 | Medium | Phase 8 |
+| ADR-0134 | Preserve Documents by Default | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0135 | Defer resolver Command to Future Phase | Accepted | 2026-07-04 | High | Phase 8 |

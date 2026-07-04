@@ -154,7 +154,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0123-adopt-status-integration-for-planning-state.md`
 - `0124-defer-force-update-planning-overwrite-options.md`
 - `0125-prepare-phase-7-implementation-guidance.md`
+- `0126-adopt-guided-execution-prep.md`
+- `0127-use-preparar-as-public-command.md`
+- `0128-generate-execution-package-docs-15-to-19.md`
+- `0129-keep-execution-read-only-in-phase-7.md`
+- `0130-prioritize-critical-risks-before-features.md`
+- `0131-require-human-approval-before-implementation.md`
+- `0132-update-runtime-state-with-prepared-task.md`
+- `0133-extend-status-with-prepared-task-summary.md`
+- `0134-preserve-documents-by-default.md`
+- `0135-defer-resolver-command-to-future-phase.md`
 
 ## Próximos passos
 
-- Iniciar Phase 7 — Resolve Aí Guided Execution Prep.
+- Iniciar Phase 8 — Resolve Aí Guided Review and Validation.

@@ -34,6 +34,7 @@ export interface ResolveAiState {
   planningDocuments?: string[];
   nextRecommendedAction?: string;
   planningConfidence?: "baixa" | "media" | "alta";
+  ultimoPreparo?: PreparedTaskState;
 }
 
 export interface InitResult {
@@ -86,4 +87,33 @@ export interface PlanningOutput {
   executionPrompts: string[];
   validationChecklist: string[];
   hasCriticalRisk: boolean;
+}
+
+export interface PreparedTaskState {
+  executadoEm: string;
+  tarefa: string;
+  categoria: string;
+  prioridade: string;
+  confianca: string;
+  riskLevel: "green" | "yellow" | "orange" | "red";
+  approvalRequired: true;
+  canAutoExecute: false;
+  documentosGerados: string[];
+}
+
+export interface PreparedTask {
+  id: string;
+  title: string;
+  source: "risk" | "backlog" | "plan" | "validation" | "documentation" | "fallback";
+  priority: "critical" | "high" | "medium" | "low";
+  confidence: "high" | "medium" | "low";
+  category: "security" | "tests" | "documentation" | "validation" | "bugfix" | "feature" | "refactor" | "release";
+  riskLevel: "green" | "yellow" | "orange" | "red";
+  scope: string[];
+  outOfScope: string[];
+  likelyFiles: string[];
+  validation: string[];
+  risks: string[];
+  stopConditions: string[];
+  reason: string;
 }
