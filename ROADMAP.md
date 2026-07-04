@@ -289,7 +289,7 @@ Criar biblioteca completa de templates.
 
 # Sprint 7 — Protocolos, exemplos e consolidação
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -304,6 +304,29 @@ Transformar o framework em material utilizável em cenários reais.
 - Best practices.
 - Benchmarks.
 - Consolidação final da documentação.
+- Getting started e caminhos públicos de adoção.
+- Release readiness audit e limitações conhecidas.
+- Community onboarding e GitHub templates.
+- ADRs 0061 a 0070.
+
+---
+
+# Phase 2 — Validation and Productization
+
+Status: **Next**
+
+## Objetivo
+
+Validar o AI-SEOS em uso real e preparar `v0.1.0-alpha`.
+
+## Entregáveis
+
+- Um projeto completo executado end-to-end pelo AI-SEOS.
+- Testes reais dos três entry modes.
+- Validação de workflows com Codex, Cursor ou Claude Code.
+- Automação de links, front matter e registries.
+- Site de documentação.
+- Preparação de release `v0.1.0-alpha`.
 
 ---
 

@@ -89,7 +89,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0058-adopt-engine-template-pack.md`
 - `0059-adopt-agent-handoff-template-pack.md`
 - `0060-adopt-template-registry-and-maintenance-policy.md`
+- `0061-adopt-protocol-system-lifecycle.md`
+- `0062-adopt-case-library.md`
+- `0063-adopt-anti-pattern-catalog.md`
+- `0064-adopt-best-practices-catalog.md`
+- `0065-adopt-real-world-reference-cases.md`
+- `0066-adopt-public-adoption-paths.md`
+- `0067-adopt-release-readiness-audit.md`
+- `0068-adopt-repository-hardening-process.md`
+- `0069-adopt-community-onboarding-model.md`
+- `0070-adopt-post-sprint-roadmap-model.md`
 
 ## Próximos passos
 
-- Validar templates em protocolos, casos reais, anti-patterns e best practices na Sprint 7.
+- Validar AI-SEOS em projetos reais durante Phase 2.

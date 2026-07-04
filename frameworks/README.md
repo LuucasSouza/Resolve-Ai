@@ -36,6 +36,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 - Sprint 5 consolidou frameworks cross-engine, maturidade, readiness, agentes, governança, QA e reference implementation.
 - Sprint 5.5 criou o Entry Modes Framework.
 - Sprint 6 conectou os frameworks aos template packs governados.
+- Sprint 7 consolidou adoção pública, anti-patterns, best practices e release readiness.
 
 ## Frameworks disponíveis
 
@@ -77,3 +78,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Sprint 6
 
 - Template packs aplicam Entry Modes, lifecycle, engines e agent collaboration como artefatos reutilizáveis.
+
+## Sprint 7
+
+- Protocolos, casos, anti-patterns, best practices e release readiness tornam o framework adotável e auditável.

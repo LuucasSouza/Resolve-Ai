@@ -31,7 +31,7 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 ## Próximos passos
 
 - Expandir guias de visão, filosofia, governança e arquitetura.
-- Validar protocolos, casos reais, anti-patterns e best practices na Sprint 7.
+- Validar AI-SEOS em projetos reais durante Phase 2.
 
 ## Documentação adicionada na Sprint 4
 
@@ -53,3 +53,13 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 - `sprints/sprint-6-handoff.md`: handoff da Sprint 6.
 - `sprints/sprint-6-validation-report.md`: validação da Sprint 6.
 - `sprints/sprint-6-retrospective.md`: retrospectiva da Sprint 6.
+
+## Documentação adicionada na Sprint 7
+
+- `protocols/`: protocol system, lifecycle, registry e taxonomy.
+- `anti-patterns/`: catálogo e mapa de countermeasures.
+- `best-practices/`: catálogo de práticas por etapa.
+- `getting-started/`: caminhos públicos de adoção e glossário iniciante.
+- `release/`: release readiness, limitações, release notes draft e roadmap pós-Sprint 7.
+- `community/`: onboarding, maintainer guide e proposal process.
+- `quality/`: auditorias de release readiness, repositório, documentação, templates, protocolos e exemplos.

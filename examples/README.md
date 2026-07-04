@@ -29,7 +29,7 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 ## Próximos passos
 
-- Expandir os casos reais, anti-patterns e best practices na Sprint 7.
+- Validar e expandir casos reais durante Phase 2.
 
 ## Sprint 5
 
@@ -44,3 +44,8 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 - `template-showcase/`: comparação da mesma academia de artes marciais em três profundidades de template.
 - `templates/examples-filled/`: exemplos preenchidos por perfil e lifecycle.
+
+## Sprint 7
+
+- `case-library/`: biblioteca de casos por modo, domínio e profundidade.
+- `real-world/`: cinco casos realistas para validação prática do AI-SEOS.

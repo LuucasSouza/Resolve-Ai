@@ -94,6 +94,22 @@ Todo PR deve explicar:
 - ADR relacionada, se houver;
 - checklist de validação.
 
+Use `.github/PULL_REQUEST_TEMPLATE.md`.
+
+---
+
+# 4.1 Propostas comunitárias
+
+Use os issue templates para:
+
+- bug report;
+- documentation improvement;
+- framework proposal;
+- template proposal;
+- case study proposal.
+
+Para novas propostas, consulte `docs/community/proposal-process.md`.
+
 ---
 
 # 5. Padrão de commits
@@ -122,6 +138,8 @@ Antes de enviar contribuição:
 - [ ] Atualizei changelog quando aplicável.
 - [ ] Criei ADR se a mudança for estrutural.
 - [ ] Verifiquei consistência de nomenclatura.
+- [ ] Atualizei registry ou índice relacionado quando aplicável.
+- [ ] Usei os guias em `docs/community/` quando a contribuição for comunitária.
 
 ---
 

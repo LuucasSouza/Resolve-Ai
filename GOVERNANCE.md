@@ -191,7 +191,17 @@ Uma contribuição deve:
 
 ---
 
-# 11. Papel da IA na governança
+# 11. Governança comunitária
+
+Contribuições públicas devem usar os templates em `.github/ISSUE_TEMPLATE/` ou o pull request template.
+
+Novas propostas devem indicar tipo, motivação, escopo, riscos, artefatos relacionados e impacto na governança existente.
+
+Mudanças em protocolos, templates, frameworks, casos, anti-patterns ou best practices devem atualizar os registries ou índices relacionados quando aplicável.
+
+---
+
+# 12. Papel da IA na governança
 
 Agentes de IA podem:
 
@@ -212,7 +222,7 @@ Agentes de IA não devem:
 
 ---
 
-# 12. Frase de governança
+# 13. Frase de governança
 
 ```text
 AI-SEOS deve evoluir rápido, mas nunca de forma caótica.

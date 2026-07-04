@@ -21,6 +21,19 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Sprint 7 executada.
+- Criado sistema oficial de protocolos com lifecycle, registry, taxonomy e templates.
+- Criada case library com caso cross-mode e casos para Non-Technical Builder, Vibe Coder e Professional Engineer.
+- Criados casos reais para martial arts academy SaaS, WhatsApp order tracker, internal operations dashboard, AI document assistant e multi-tenant SaaS.
+- Criado catálogo de anti-patterns com 25 anti-patterns e countermeasures do AI-SEOS.
+- Criado catálogo de best practices com mais de 40 práticas mapeadas a engines, entry modes e templates.
+- Criada documentação pública de adoção, choose your path, glossário para iniciantes e first project walkthrough.
+- Criadas documentações de release, known limitations, release notes draft e post-Sprint 7 roadmap.
+- Criada documentação comunitária, maintainer guide e proposal process.
+- Criados templates de GitHub issue e pull request.
+- Criada auditoria de release readiness com score 43/50, Public alpha.
+- Criadas ADRs 0061 a 0070.
+- Criados Sprint 7 handoff, validation report e retrospective.
 - Sprint 6 executada.
 - Criados template packs completos para Non-Technical Builder, Vibe Coder e Professional Engineer.
 - Criados templates universais de lifecycle de intake a reflection.

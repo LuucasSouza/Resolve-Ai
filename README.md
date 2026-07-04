@@ -102,6 +102,18 @@ AI-SEOS foi criado para:
 
 ---
 
+## Escolha seu caminho
+
+Comece pelo modo que mais parece com você:
+
+- **Non-Technical Builder**: você tem um problema real, mas não sabe descrever isso em termos de software. Comece em `docs/getting-started/for-non-technical-builders.md` e use `templates/packs/non-technical-builder-pack/`.
+- **Vibe Coder**: você usa Codex, Cursor, Claude Code ou ferramentas parecidas e quer evitar caos, retrabalho e prompts vagos. Comece em `docs/getting-started/for-vibe-coders.md` e use `templates/packs/vibe-coder-pack/`.
+- **Professional Engineer**: você quer aplicar AI-SEOS como workflow técnico com engines, ADRs, riscos, handoffs e readiness. Comece em `docs/getting-started/for-professional-engineers.md` e use `examples/case-library/professional-engineer/`.
+
+Para decidir, leia `docs/getting-started/choose-your-path.md`.
+
+---
+
 ## O que diferencia o AI-SEOS
 
 A maioria dos materiais públicos sobre IA para engenharia foca em prompts isolados.
@@ -205,7 +217,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Sprint 6 concluída**
+Status atual: **Sprint 7 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -273,7 +285,20 @@ Sprint 6 criou template packs completos e governados:
 - ADRs 0052 a 0060;
 - relatório de validação em `docs/sprints/sprint-6-validation-report.md`.
 
-Próxima etapa: **Sprint 7 — Protocolos, casos reais e consolidação**.
+Sprint 7 consolidou o ciclo inicial do AI-SEOS:
+
+- sistema oficial de protocolos, lifecycle, registry e taxonomy;
+- case library e casos reais para os três perfis;
+- catálogo de anti-patterns com countermeasures do AI-SEOS;
+- catálogo de best practices relacionado a engines, entry modes e templates;
+- documentação pública de adoção, getting started, glossário e walkthrough;
+- documentação comunitária, templates de issue e pull request;
+- auditoria de qualidade, release readiness e limitações conhecidas;
+- ADRs 0061 a 0070;
+- release readiness score: 43/50, Public alpha;
+- relatório de validação em `docs/sprints/sprint-7-validation-report.md`.
+
+Próxima etapa: **Phase 2 — Validation and Productization**.
 
 ---
 

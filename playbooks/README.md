@@ -36,6 +36,7 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 - Sprint 5 criou playbooks de reference implementation.
 - Sprint 5.5 criou playbooks de Builder Intake.
 - Sprint 6 conectou templates e exemplos para uso prático por perfil.
+- Sprint 7 adicionou caminhos públicos de adoção e casos reais como playbooks de validação.
 
 ## Playbooks disponíveis
 
@@ -61,3 +62,9 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 
 - Use `templates/packs/` como playbook operacional de entrada por perfil.
 - Use `examples/template-showcase/` para calibrar profundidade de artefatos.
+
+## Sprint 7
+
+- Use `docs/getting-started/` para onboarding.
+- Use `examples/case-library/` e `examples/real-world/` para validar projetos reais.
+- Use `docs/anti-patterns/` e `docs/best-practices/` para revisão de qualidade.

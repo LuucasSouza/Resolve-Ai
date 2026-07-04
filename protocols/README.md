@@ -36,6 +36,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 - Sprint 5 adicionou protocolos cross-engine e agent collaboration.
 - Sprint 5.5 adicionou Builder Intake e Mode Router.
 - Sprint 6 adicionou Template Maintenance Protocol.
+- Sprint 7 consolidou protocol system, lifecycle, registry e taxonomy.
 
 ## Protocolos disponíveis
 
@@ -72,3 +73,8 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 ## Sprint 6
 
 - `template-maintenance/`: protocolo de revisão, versionamento, depreciação e sincronização de templates.
+
+## Sprint 7
+
+- `docs/protocols/`: sistema público de protocolos, lifecycle, registry e taxonomy.
+- `templates/protocols/`: templates para criação e revisão de protocolos.

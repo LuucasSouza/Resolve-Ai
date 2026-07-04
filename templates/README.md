@@ -36,6 +36,7 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - Sprint 5 criou templates cross-engine, meta-framework, maturity, readiness, frameworks, quality e agent collaboration.
 - Sprint 5.5 criou templates iniciais de entry modes e intake.
 - Sprint 6 criou packs completos por perfil, lifecycle, engines, agent handoff, exemplos preenchidos e governança de templates.
+- Sprint 7 criou templates para protocolos e estudos de caso.
 
 ## Templates disponíveis
 
@@ -92,3 +93,8 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - `agents/`: handoffs entre agentes especializados.
 - `examples-filled/`: exemplos preenchidos com academia de artes marciais.
 - `quality/`: checklist de revisão de templates.
+
+## Sprint 7
+
+- `protocols/`: protocol template e protocol review checklist.
+- `cases/`: case study template e case quality checklist.
