@@ -52,3 +52,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0049 | Adopt Professional Engineer Mode | Accepted | 2026-07-03 | High | Sprint 6 |
 | ADR-0050 | Adopt Problem-to-Software Translation Framework | Accepted | 2026-07-03 | Medium | Sprint 6 |
 | ADR-0051 | Adopt Mode Router Before Discovery Engine | Accepted | 2026-07-03 | Medium | Sprint 6 |
+| ADR-0071 | Adopt Repository Audit Before Public Alpha | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0072 | Adopt End-to-End Validation Before Alpha Release | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0073 | Adopt SenseiHub as First Real-World Validation Case | Accepted | 2026-07-04 | Medium | Alpha |
+| ADR-0074 | Adopt Non-Technical Builder Validation | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0075 | Adopt Vibe Coder Validation | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0076 | Adopt Professional Engineer Validation | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0077 | Adopt Documentation Site for Public Alpha | Accepted | 2026-07-04 | Medium | Alpha |
+| ADR-0078 | Adopt v0.1.0-alpha Release Process | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0079 | Adopt Feedback and Improvement Loop | Accepted | 2026-07-04 | High | Alpha |
+| ADR-0080 | Adopt Phase 2 Validation and Productization Model | Accepted | 2026-07-04 | Medium | Alpha |

@@ -37,6 +37,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 - Sprint 5.5 criou o Entry Modes Framework.
 - Sprint 6 conectou os frameworks aos template packs governados.
 - Sprint 7 consolidou adoção pública, anti-patterns, best practices e release readiness.
+- Phase 2 validou o framework contra SenseiHub e os três entry modes.
 
 ## Frameworks disponíveis
 
@@ -82,3 +83,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Sprint 7
 
 - Protocolos, casos, anti-patterns, best practices e release readiness tornam o framework adotável e auditável.
+
+## Phase 2
+
+- SenseiHub e first end-to-end validation case funcionam como validação inicial do framework completo.

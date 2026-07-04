@@ -21,6 +21,17 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 2 executada.
+- Criado repository audit and hardening report.
+- Criado first end-to-end validation case com cadeia completa de artefatos.
+- Criado SenseiHub como primeiro caso real de validação.
+- Criadas validações para Non-Technical Builder, Vibe Coder e Professional Engineer.
+- Criada estratégia de publicação GitHub-first com information architecture.
+- Criado plano de release `v0.1.0-alpha`, release notes, checklist e known limitations.
+- Criado feedback and improvement loop com protocolo, templates e backlog.
+- Criado release readiness report com score 47/50, Strong public alpha candidate.
+- Criadas ADRs 0071 a 0080.
+- Criados Phase 2 handoff, validation report e retrospective.
 - Sprint 7 executada.
 - Criado sistema oficial de protocolos com lifecycle, registry, taxonomy e templates.
 - Criada case library com caso cross-mode e casos para Non-Technical Builder, Vibe Coder e Professional Engineer.

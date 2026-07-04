@@ -37,6 +37,7 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 - Sprint 5.5 criou playbooks de Builder Intake.
 - Sprint 6 conectou templates e exemplos para uso prático por perfil.
 - Sprint 7 adicionou caminhos públicos de adoção e casos reais como playbooks de validação.
+- Phase 2 adicionou validação end-to-end e release alpha readiness como próximos playbooks operacionais.
 
 ## Playbooks disponíveis
 
@@ -68,3 +69,8 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 - Use `docs/getting-started/` para onboarding.
 - Use `examples/case-library/` e `examples/real-world/` para validar projetos reais.
 - Use `docs/anti-patterns/` e `docs/best-practices/` para revisão de qualidade.
+
+## Phase 2
+
+- Use `examples/real-world/senseihub/` como caso de validação completo.
+- Use `docs/release/v0.1.0-alpha-checklist.md` antes de criar o tag alpha.

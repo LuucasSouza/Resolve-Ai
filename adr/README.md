@@ -99,7 +99,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0068-adopt-repository-hardening-process.md`
 - `0069-adopt-community-onboarding-model.md`
 - `0070-adopt-post-sprint-roadmap-model.md`
+- `0071-adopt-repository-audit-before-public-alpha.md`
+- `0072-adopt-end-to-end-validation-before-alpha-release.md`
+- `0073-adopt-senseihub-as-first-real-world-validation-case.md`
+- `0074-adopt-non-technical-builder-validation.md`
+- `0075-adopt-vibe-coder-validation.md`
+- `0076-adopt-professional-engineer-validation.md`
+- `0077-adopt-documentation-site-for-public-alpha.md`
+- `0078-adopt-v0-1-0-alpha-release-process.md`
+- `0079-adopt-feedback-and-improvement-loop.md`
+- `0080-adopt-phase-2-validation-and-productization-model.md`
 
 ## Próximos passos
 
-- Validar AI-SEOS em projetos reais durante Phase 2.
+- Preparar tag `v0.1.0-alpha` e iniciar validação externa.

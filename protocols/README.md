@@ -37,6 +37,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 - Sprint 5.5 adicionou Builder Intake e Mode Router.
 - Sprint 6 adicionou Template Maintenance Protocol.
 - Sprint 7 consolidou protocol system, lifecycle, registry e taxonomy.
+- Phase 2 adicionou protocolos de repository audit, end-to-end validation, user validation e feedback triage.
 
 ## Protocolos disponíveis
 
@@ -78,3 +79,10 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 
 - `docs/protocols/`: sistema público de protocolos, lifecycle, registry e taxonomy.
 - `templates/protocols/`: templates para criação e revisão de protocolos.
+
+## Phase 2
+
+- `repository-audit/`: protocolo de auditoria antes de release alpha.
+- `end-to-end-validation/`: protocolo para validar o lifecycle completo.
+- `user-validation/`: protocolos de validação por perfil.
+- `feedback/`: protocolo de triagem de feedback e melhoria contínua.

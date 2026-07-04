@@ -199,6 +199,8 @@ Novas propostas devem indicar tipo, motivação, escopo, riscos, artefatos relac
 
 Mudanças em protocolos, templates, frameworks, casos, anti-patterns ou best practices devem atualizar os registries ou índices relacionados quando aplicável.
 
+Feedback público deve ser triado pelo processo definido em `docs/community/feedback-and-improvement-loop.md` e `protocols/feedback/feedback-triage-protocol.md`.
+
 ---
 
 # 12. Papel da IA na governança

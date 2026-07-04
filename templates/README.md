@@ -37,6 +37,7 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - Sprint 5.5 criou templates iniciais de entry modes e intake.
 - Sprint 6 criou packs completos por perfil, lifecycle, engines, agent handoff, exemplos preenchidos e governança de templates.
 - Sprint 7 criou templates para protocolos e estudos de caso.
+- Phase 2 criou templates de validação, auditoria, publicação e feedback.
 
 ## Templates disponíveis
 
@@ -98,3 +99,10 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 
 - `protocols/`: protocol template e protocol review checklist.
 - `cases/`: case study template e case quality checklist.
+
+## Phase 2
+
+- `validation/`: scripts, reports e scorecards de validação.
+- `repository-audit/`: template de repository audit report.
+- `publication/`: docs site page template.
+- `feedback/`: user feedback e framework improvement proposal.

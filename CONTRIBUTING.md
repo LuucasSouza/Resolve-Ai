@@ -110,6 +110,8 @@ Use os issue templates para:
 
 Para novas propostas, consulte `docs/community/proposal-process.md`.
 
+Para feedback após uso real do framework, consulte `docs/community/feedback-and-improvement-loop.md` e use os templates em `templates/feedback/`.
+
 ---
 
 # 5. Padrão de commits

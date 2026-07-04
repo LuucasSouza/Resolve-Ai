@@ -217,7 +217,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Sprint 7 concluída**
+Status atual: **Phase 2 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -298,7 +298,20 @@ Sprint 7 consolidou o ciclo inicial do AI-SEOS:
 - release readiness score: 43/50, Public alpha;
 - relatório de validação em `docs/sprints/sprint-7-validation-report.md`.
 
-Próxima etapa: **Phase 2 — Validation and Productization**.
+Phase 2 moveu o AI-SEOS para public-alpha candidate validado:
+
+- repository audit e hardening checklist;
+- first end-to-end validation case;
+- SenseiHub como primeiro caso real de validação;
+- validações para Non-Technical Builder, Vibe Coder e Professional Engineer;
+- estratégia de publicação e documentação GitHub-first;
+- plano de release `v0.1.0-alpha`;
+- feedback and improvement loop;
+- ADRs 0071 a 0080;
+- release readiness score: 47/50, Strong public alpha candidate;
+- relatório de validação em `docs/sprints/phase-2-validation-report.md`.
+
+Próxima etapa: **preparar o tag `v0.1.0-alpha` após revisão manual do mantenedor e iniciar validação externa com usuários reais**.
 
 ---
 

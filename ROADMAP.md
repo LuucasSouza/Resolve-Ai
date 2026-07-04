@@ -313,7 +313,7 @@ Transformar o framework em material utilizável em cenários reais.
 
 # Phase 2 — Validation and Productization
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -327,6 +327,30 @@ Validar o AI-SEOS em uso real e preparar `v0.1.0-alpha`.
 - Automação de links, front matter e registries.
 - Site de documentação.
 - Preparação de release `v0.1.0-alpha`.
+- Repository audit e hardening checklist.
+- First end-to-end validation case.
+- SenseiHub real-world validation case.
+- Validação dos três entry modes.
+- Feedback and improvement loop.
+- ADRs 0071 a 0080.
+- Release readiness score 47/50.
+
+---
+
+# v0.1.0-alpha Release Preparation
+
+Status: **Next**
+
+## Objetivo
+
+Executar revisão manual do mantenedor, corrigir bloqueios finais se existirem e criar o tag `v0.1.0-alpha`.
+
+## Entregáveis
+
+- Revisão manual do release checklist.
+- Confirmação de limitações conhecidas.
+- Tag `v0.1.0-alpha`.
+- Primeira rodada de validação externa com usuários reais.
 
 ---
 

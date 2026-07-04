@@ -29,7 +29,7 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 ## Próximos passos
 
-- Validar e expandir casos reais durante Phase 2.
+- Executar validação externa dos casos reais e transformar SenseiHub em referência implementável.
 
 ## Sprint 5
 
@@ -49,3 +49,8 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 - `case-library/`: biblioteca de casos por modo, domínio e profundidade.
 - `real-world/`: cinco casos realistas para validação prática do AI-SEOS.
+
+## Phase 2
+
+- `validation/`: first end-to-end validation case e casos de validação por perfil.
+- `real-world/senseihub/`: primeiro caso real completo de validação.

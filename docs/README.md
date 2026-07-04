@@ -31,7 +31,7 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 ## Próximos passos
 
 - Expandir guias de visão, filosofia, governança e arquitetura.
-- Validar AI-SEOS em projetos reais durante Phase 2.
+- Preparar release `v0.1.0-alpha` e validar com usuários reais.
 
 ## Documentação adicionada na Sprint 4
 
@@ -63,3 +63,11 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 - `release/`: release readiness, limitações, release notes draft e roadmap pós-Sprint 7.
 - `community/`: onboarding, maintainer guide e proposal process.
 - `quality/`: auditorias de release readiness, repositório, documentação, templates, protocolos e exemplos.
+
+## Documentação adicionada na Phase 2
+
+- `validation/`: first end-to-end validation case e validações dos três entry modes.
+- `publication/`: documentação de publicação, information architecture e navigation map.
+- `release/`: plano, checklist, release notes, known limitations e readiness report de `v0.1.0-alpha`.
+- `community/`: feedback loop, issue triage e improvement backlog.
+- `quality/`: repository audit and hardening.
