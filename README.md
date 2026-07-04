@@ -205,7 +205,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Sprint 5.5 concluída**
+Status atual: **Sprint 6 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -262,7 +262,18 @@ Sprint 5.5 adicionou a Entry Modes Layer antes da criação dos templates comple
 - ADRs 0046 a 0051;
 - relatório de validação em `docs/sprints/sprint-5-5-validation-report.md`.
 
-Próxima etapa: **Sprint 6 — Templates completos por modo de entrada**.
+Sprint 6 criou template packs completos e governados:
+
+- packs para Non-Technical Builder, Vibe Coder e Professional Engineer;
+- templates universais de lifecycle de intake a reflection;
+- templates operacionais por engine;
+- templates de handoff entre agentes;
+- exemplos preenchidos usando o cenário de uma academia de artes marciais;
+- registry, taxonomy, policy, quality standard e protocolo de manutenção de templates;
+- ADRs 0052 a 0060;
+- relatório de validação em `docs/sprints/sprint-6-validation-report.md`.
+
+Próxima etapa: **Sprint 7 — Protocolos, casos reais e consolidação**.
 
 ---
 

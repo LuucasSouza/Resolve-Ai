@@ -80,7 +80,16 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0049-adopt-professional-engineer-mode.md`
 - `0050-adopt-problem-to-software-translation-framework.md`
 - `0051-adopt-mode-router-before-discovery-engine.md`
+- `0052-adopt-template-packs-as-first-class-framework-assets.md`
+- `0053-adopt-profile-specific-template-packs.md`
+- `0054-adopt-non-technical-builder-template-pack.md`
+- `0055-adopt-vibe-coder-template-pack.md`
+- `0056-adopt-professional-engineer-template-pack.md`
+- `0057-adopt-lifecycle-template-pack.md`
+- `0058-adopt-engine-template-pack.md`
+- `0059-adopt-agent-handoff-template-pack.md`
+- `0060-adopt-template-registry-and-maintenance-policy.md`
 
 ## Próximos passos
 
-- Consolidar templates completos e example-filled versions na Sprint 6.
+- Validar templates em protocolos, casos reais, anti-patterns e best practices na Sprint 7.

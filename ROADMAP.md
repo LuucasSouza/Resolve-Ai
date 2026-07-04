@@ -259,7 +259,7 @@ Definir os modos oficiais de entrada antes da criação dos templates completos.
 
 # Sprint 6 — Templates completos
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -278,10 +278,18 @@ Criar biblioteca completa de templates.
 - Runbook Template.
 - Postmortem Template.
 - Mode-specific template packs for Non-Technical Builder, Vibe Coder and Professional Engineer.
+- Lifecycle templates from intake to reflection.
+- Engine-specific operational templates.
+- Agent handoff templates.
+- Martial arts academy filled examples.
+- Template registry, taxonomy, maintenance policy and quality standard.
+- ADRs 0052 a 0060.
 
 ---
 
 # Sprint 7 — Protocolos, exemplos e consolidação
+
+Status: **Next**
 
 ## Objetivo
 

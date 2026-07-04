@@ -35,6 +35,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 - Sprint 4 adicionou protocolos para Execution, Documentation, Handoff e Reflection.
 - Sprint 5 adicionou protocolos cross-engine e agent collaboration.
 - Sprint 5.5 adicionou Builder Intake e Mode Router.
+- Sprint 6 adicionou Template Maintenance Protocol.
 
 ## Protocolos disponíveis
 
@@ -67,3 +68,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 
 - `builder-intake/`: protocolo de intake antes do Discovery Engine.
 - `mode-router/`: protocolo de seleção e inferência de modo.
+
+## Sprint 6
+
+- `template-maintenance/`: protocolo de revisão, versionamento, depreciação e sincronização de templates.

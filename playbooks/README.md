@@ -35,6 +35,7 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 - Sprint 4 criou playbooks de system review.
 - Sprint 5 criou playbooks de reference implementation.
 - Sprint 5.5 criou playbooks de Builder Intake.
+- Sprint 6 conectou templates e exemplos para uso prático por perfil.
 
 ## Playbooks disponíveis
 
@@ -55,3 +56,8 @@ Playbook Maintainers mantêm aplicabilidade prática e alinhamento com templates
 ## Sprint 5.5
 
 - `builder-intake/`: interview, guided build e technical intake por modo.
+
+## Sprint 6
+
+- Use `templates/packs/` como playbook operacional de entrada por perfil.
+- Use `examples/template-showcase/` para calibrar profundidade de artefatos.

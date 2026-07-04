@@ -35,6 +35,7 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - Sprint 4 criou templates de execução, backlog, documentação, handoff e reflexão.
 - Sprint 5 criou templates cross-engine, meta-framework, maturity, readiness, frameworks, quality e agent collaboration.
 - Sprint 5.5 criou templates iniciais de entry modes e intake.
+- Sprint 6 criou packs completos por perfil, lifecycle, engines, agent handoff, exemplos preenchidos e governança de templates.
 
 ## Templates disponíveis
 
@@ -79,3 +80,15 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 - `intake/non-technical-builder/`: builder interview.
 - `intake/vibe-coder/`: vibe coder build brief.
 - `intake/professional-engineer/`: technical intake.
+
+## Sprint 6
+
+- `packs/non-technical-builder-pack/`: templates em linguagem simples para problemas reais.
+- `packs/vibe-coder-pack/`: prompts, slices, validação e deploy readiness.
+- `packs/professional-engineer-pack/`: discovery técnico, NFRs, domínio, ADRs, risco e handoff.
+- `packs/full-lifecycle-pack/`: trilha universal do AI-SEOS.
+- `lifecycle/`: templates de intake, discovery, product, architecture, decision, risk, optimization, execution, documentation, handoff e reflection.
+- `engines/`: templates operacionais por engine.
+- `agents/`: handoffs entre agentes especializados.
+- `examples-filled/`: exemplos preenchidos com academia de artes marciais.
+- `quality/`: checklist de revisão de templates.

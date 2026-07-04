@@ -31,7 +31,7 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 ## Próximos passos
 
 - Expandir guias de visão, filosofia, governança e arquitetura.
-- Consolidar template packs completos na Sprint 6.
+- Validar protocolos, casos reais, anti-patterns e best practices na Sprint 7.
 
 ## Documentação adicionada na Sprint 4
 
@@ -46,3 +46,10 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 ## Documentação adicionada na Sprint 5.5
 
 - `entry-modes/`: rationale, overview e modos oficiais de entrada.
+
+## Documentação adicionada na Sprint 6
+
+- `templates/`: registry, taxonomy, maintenance policy e quality standard.
+- `sprints/sprint-6-handoff.md`: handoff da Sprint 6.
+- `sprints/sprint-6-validation-report.md`: validação da Sprint 6.
+- `sprints/sprint-6-retrospective.md`: retrospectiva da Sprint 6.

@@ -21,6 +21,16 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Sprint 6 executada.
+- Criados template packs completos para Non-Technical Builder, Vibe Coder e Professional Engineer.
+- Criados templates universais de lifecycle de intake a reflection.
+- Criados templates operacionais para Discovery, Product, Architecture, Decision, Risk, Optimization, Execution, Documentation, Handoff e Reflection Engines.
+- Criados templates de handoff para AI CTO, Product Owner, Solution Architect, Security Lead, Implementation Lead, QA Lead, Documentation Lead, DevOps Lead e Reviewer.
+- Criados exemplos preenchidos com o cenário de academia de artes marciais.
+- Criados template registry, taxonomy, maintenance policy, quality standard e review checklist.
+- Criado protocolo de manutenção de templates.
+- Criadas ADRs 0052 a 0060.
+- Criados Sprint 6 handoff, validation report e retrospective.
 - Sprint 5.5 executada.
 - Criada Entry Modes Layer antes do Discovery Engine.
 - Criados Non-Technical Builder Mode, Vibe Coder Mode e Professional Engineer Mode.

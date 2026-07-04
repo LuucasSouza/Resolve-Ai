@@ -29,7 +29,7 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 ## Próximos passos
 
-- Expandir reference project greenfield SaaS com artefatos preenchidos na Sprint 6.
+- Expandir os casos reais, anti-patterns e best practices na Sprint 7.
 
 ## Sprint 5
 
@@ -39,3 +39,8 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 ## Sprint 5.5
 
 - `entry-modes/`: exemplo comparando a mesma ideia nos três modos de entrada.
+
+## Sprint 6
+
+- `template-showcase/`: comparação da mesma academia de artes marciais em três profundidades de template.
+- `templates/examples-filled/`: exemplos preenchidos por perfil e lifecycle.
