@@ -97,3 +97,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0113 | Adopt Portuguese-First Diagnostic UX | Accepted | 2026-07-04 | High | Phase 6 |
 | ADR-0114 | Adopt Local State Updates After Diagnostics | Accepted | 2026-07-04 | Medium | Phase 6 |
 | ADR-0115 | Defer Deep AI Analysis to Future Phases | Accepted | 2026-07-04 | High | Phase 6 |
+| ADR-0116 | Adopt planejar as Guided Planning Command | Accepted | 2026-07-04 | Medium | Phase 7 |
+| ADR-0117 | Keep Planning Read-Only for Product Code | Accepted | 2026-07-04 | High | Phase 7 |
+| ADR-0118 | Adopt Planning Output Documents | Accepted | 2026-07-04 | Medium | Phase 7 |
+| ADR-0119 | Adopt Prioritized Backlog Format | Accepted | 2026-07-04 | Medium | Phase 7 |
+| ADR-0120 | Adopt Sprint A/B/C Planning Model | Accepted | 2026-07-04 | High | Phase 7 |
+| ADR-0121 | Adopt Execution Prompt Generation | Accepted | 2026-07-04 | High | Phase 7 |
+| ADR-0122 | Adopt Safety Gates for Implementation Prep | Accepted | 2026-07-04 | High | Phase 7 |
+| ADR-0123 | Adopt Status Integration for Planning State | Accepted | 2026-07-04 | Medium | Phase 7 |
+| ADR-0124 | Defer Force Update Planning Overwrite Options | Accepted | 2026-07-04 | High | Phase 7 |
+| ADR-0125 | Prepare Phase 7 Implementation Guidance | Accepted | 2026-07-04 | Medium | Phase 7 |

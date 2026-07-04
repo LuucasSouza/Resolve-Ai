@@ -9,6 +9,7 @@ Comandos disponíveis:
   resolve-ai começar      Prepara o Resolve Aí neste projeto
   resolve-ai comecar      Mesmo comando, sem acento
   resolve-ai diagnosticar Gera diagnóstico local seguro
+  resolve-ai planejar     Cria plano, backlog, sprints e prompts
   resolve-ai ligar        Liga o Resolve Aí neste projeto
   resolve-ai desligar     Desliga para economizar contexto e tokens
   resolve-ai status       Mostra como o Resolve Aí está neste projeto

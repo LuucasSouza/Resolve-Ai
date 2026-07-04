@@ -21,6 +21,16 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 6 executada.
+- Implementado comando `resolve-ai planejar`.
+- Implementados aliases `plano` e `planejamento`.
+- Criada geração dos documentos `docs/resolve-ai/10` a `14`.
+- Criado backlog priorizado, próximas sprints, prompts de execução e checklist de validação.
+- Atualizado `.resolve-ai/state.json` com resumo do último planejamento.
+- Atualizado `resolve-ai status` para mostrar último plano.
+- Criados testes automatizados para planejamento guiado.
+- Criadas ADRs 0116 a 0125.
+- Criados Phase 6 handoff, validation report e retrospective.
 - Phase 5 executada.
 - Implementado comando `resolve-ai diagnosticar`.
 - Implementados aliases `diagnostico` e `diagnóstico`.

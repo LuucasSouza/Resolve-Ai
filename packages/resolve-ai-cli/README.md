@@ -12,6 +12,9 @@ Esta versão implementa apenas comandos locais e não destrutivos:
 - `resolve-ai diagnosticar`
 - `resolve-ai diagnostico`
 - `resolve-ai diagnóstico`
+- `resolve-ai planejar`
+- `resolve-ai plano`
+- `resolve-ai planejamento`
 - `resolve-ai ligar`
 - `resolve-ai desligar`
 - `resolve-ai status`
@@ -22,6 +25,7 @@ Esta versão implementa apenas comandos locais e não destrutivos:
 node packages/resolve-ai-cli/dist/index.js ajuda
 node packages/resolve-ai-cli/dist/index.js começar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
+node packages/resolve-ai-cli/dist/index.js planejar
 node packages/resolve-ai-cli/dist/index.js status
 node packages/resolve-ai-cli/dist/index.js ligar
 node packages/resolve-ai-cli/dist/index.js desligar
@@ -61,6 +65,22 @@ docs/resolve-ai/09-handoff.md
 ```
 
 Também atualiza `.resolve-ai/state.json` com tipo de projeto, modo recomendado, stack detectada, riscos por nome e próxima ação.
+
+## O Que o Comando `planejar` Cria
+
+O comando transforma diagnóstico e documentos existentes em plano incremental, sem alterar código do produto.
+
+Ele gera, sem sobrescrever arquivos existentes:
+
+```text
+docs/resolve-ai/10-plano-de-continuacao.md
+docs/resolve-ai/11-backlog-priorizado.md
+docs/resolve-ai/12-proximas-sprints.md
+docs/resolve-ai/13-prompts-de-execucao.md
+docs/resolve-ai/14-checklist-de-validacao.md
+```
+
+Também atualiza `.resolve-ai/state.json` com último planejamento, confiança, documentos gerados e próxima ação recomendada.
 
 ## Fora de Escopo
 

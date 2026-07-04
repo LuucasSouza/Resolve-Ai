@@ -454,19 +454,38 @@ Implementar `resolve-ai diagnosticar` para gerar diagnóstico guiado sem alterar
 
 # Phase 6 — Resolve Aí Guided Planning and Implementation Prep
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
 Implementar `resolve-ai planejar`, lendo `docs/resolve-ai/` e preparando plano incremental sem alterar código automaticamente.
 
-## Entregáveis previstos
+## Entregáveis
 
 - Comando `resolve-ai planejar`.
 - Plano incremental baseado no diagnóstico.
 - Backlog estruturado.
 - Prompts para agentes de IA.
 - Quality gates antes de execução.
+- ADRs 0116 a 0125.
+
+---
+
+# Phase 7 — Resolve Aí Guided Execution Prep
+
+Status: **Next**
+
+## Objetivo
+
+Preparar execução segura de uma tarefa do backlog, ainda sem automação destrutiva.
+
+## Entregáveis previstos
+
+- Decisão sobre comando público (`executar`, `resolver` ou equivalente).
+- Seleção de uma tarefa do backlog.
+- Pacote de execução aprovado.
+- Prompt seguro por tarefa.
+- Checklist de validação e handoff pós-execução.
 
 ---
 

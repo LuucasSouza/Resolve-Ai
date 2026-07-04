@@ -99,3 +99,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Phase 5
 
 - A CLI passa a aplicar diagnóstico guiado heurístico, conectando Runtime Framework, Project Entry, Existing Project Diagnostics e documentação humana em `docs/resolve-ai/`.
+
+## Phase 6
+
+- A CLI passa a aplicar planejamento guiado, conectando diagnóstico, backlog, sprints, prompts e checklist de validação.

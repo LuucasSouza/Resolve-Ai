@@ -145,6 +145,7 @@ O CLI MVP já existe em `packages/resolve-ai-cli/` e pode ser executado localmen
 ```bash
 node packages/resolve-ai-cli/dist/index.js começar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
+node packages/resolve-ai-cli/dist/index.js planejar
 node packages/resolve-ai-cli/dist/index.js status
 node packages/resolve-ai-cli/dist/index.js ligar
 node packages/resolve-ai-cli/dist/index.js desligar
@@ -256,7 +257,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Phase 5 concluída**
+Status atual: **Phase 6 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -399,7 +400,19 @@ Phase 5 implementou o primeiro comando útil do runtime:
 - ADRs 0106 a 0115;
 - relatório de validação em `docs/sprints/phase-5-validation-report.md`.
 
-Próxima etapa: **Phase 6 — Resolve Aí Guided Planning and Implementation Prep**.
+Phase 6 implementou preparação guiada para execução:
+
+- comando `resolve-ai planejar`;
+- aliases `plano` e `planejamento`;
+- leitura de `.resolve-ai/state.json` e documentos `docs/resolve-ai/`;
+- geração de `docs/resolve-ai/10` a `14` sem sobrescrever por padrão;
+- backlog priorizado, próximas sprints, prompts de execução e checklist de validação;
+- `status` agora mostra resumo do último plano quando existir;
+- testes automatizados cobrindo 24 cenários;
+- ADRs 0116 a 0125;
+- relatório de validação em `docs/sprints/phase-6-validation-report.md`.
+
+Próxima etapa: **Phase 7 — Resolve Aí Guided Execution Prep**.
 
 ---
 

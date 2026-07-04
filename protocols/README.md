@@ -100,3 +100,7 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 ## Phase 5
 
 - `resolve-ai diagnosticar` operacionaliza o fluxo “Projeto em Andamento — Diagnóstico e Continuação” com leitura local segura e geração de documentos `00` a `09`.
+
+## Phase 6
+
+- `resolve-ai planejar` transforma diagnóstico em plano incremental, backlog, sprints, prompts seguros e checklist de validação.

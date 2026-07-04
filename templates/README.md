@@ -125,3 +125,7 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 ## Phase 5
 
 - `resolve-ai diagnosticar` materializa templates diagnósticos `00` a `09` em `docs/resolve-ai/`, preservando arquivos existentes por padrão.
+
+## Phase 6
+
+- `resolve-ai planejar` materializa templates de planejamento `10` a `14` em `docs/resolve-ai/`, preservando arquivos existentes por padrão.

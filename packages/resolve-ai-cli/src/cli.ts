@@ -3,6 +3,7 @@ import { comecarCommand } from "./commands/comecar.js";
 import { desligarCommand } from "./commands/desligar.js";
 import { diagnosticarCommand } from "./commands/diagnosticar.js";
 import { ligarCommand } from "./commands/ligar.js";
+import { planejarCommand } from "./commands/planejar.js";
 import { statusCommand } from "./commands/status.js";
 import { error } from "./core/output.js";
 
@@ -27,6 +28,11 @@ export function run(argv: string[] = process.argv.slice(2), root: string = proce
       case "diagnostico":
       case "diagnóstico":
         diagnosticarCommand(root);
+        return 0;
+      case "planejar":
+      case "plano":
+      case "planejamento":
+        planejarCommand(root);
         return 0;
       case "desligar":
         desligarCommand(root);

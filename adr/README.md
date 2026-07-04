@@ -144,7 +144,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0113-adopt-portuguese-first-diagnostic-ux.md`
 - `0114-adopt-local-state-updates-after-diagnostics.md`
 - `0115-defer-deep-ai-analysis-to-future-phases.md`
+- `0116-adopt-planejar-as-guided-planning-command.md`
+- `0117-keep-planning-read-only-for-product-code.md`
+- `0118-adopt-planning-output-documents.md`
+- `0119-adopt-prioritized-backlog-format.md`
+- `0120-adopt-sprint-abc-planning-model.md`
+- `0121-adopt-execution-prompt-generation.md`
+- `0122-adopt-safety-gates-for-implementation-prep.md`
+- `0123-adopt-status-integration-for-planning-state.md`
+- `0124-defer-force-update-planning-overwrite-options.md`
+- `0125-prepare-phase-7-implementation-guidance.md`
 
 ## Próximos passos
 
-- Iniciar Phase 6 — Resolve Aí Guided Planning and Implementation Prep.
+- Iniciar Phase 7 — Resolve Aí Guided Execution Prep.

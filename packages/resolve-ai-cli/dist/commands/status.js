@@ -25,6 +25,13 @@ Modo recomendado: ${state.modoRecomendado ?? "não informado"}
 Próxima ação: ${state.proximaAcao ?? "revisar docs/resolve-ai/09-handoff.md"}
 `
     : "";
+  const planningSummary = state.lastPlanAt
+    ? `
+Último planejamento: ${state.lastPlanAt}
+Confiança do plano: ${state.planningConfidence ?? "não informada"}
+Próxima ação planejada: ${state.nextRecommendedAction ?? "revisar docs/resolve-ai/10-plano-de-continuacao.md"}
+`
+    : "";
 
   if (state.active) {
     print(`
@@ -34,6 +41,7 @@ Docs: ${docsExists ? "docs/resolve-ai/" : "não encontrado"}
 Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 ${diagnosticSummary}
+${planningSummary}
 `);
     return;
   }
@@ -45,6 +53,7 @@ Docs: ${docsExists ? "docs/resolve-ai/" : "não encontrado"}
 Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 ${diagnosticSummary}
+${planningSummary}
 
 Para ligar:
   resolve-ai ligar

@@ -29,6 +29,11 @@ export interface ResolveAiState {
   maturidade?: number;
   proximaAcao?: string;
   documentosGerados?: string[];
+  lastPlanAt?: string;
+  lastPlanSummary?: string;
+  planningDocuments?: string[];
+  nextRecommendedAction?: string;
+  planningConfidence?: "baixa" | "media" | "alta";
 }
 
 export interface InitResult {
@@ -61,4 +66,24 @@ export interface DiagnosticResult {
   createdDocs: string[];
   preservedDocs: string[];
   legacyDocsFound: boolean;
+}
+
+export interface PlanningInput {
+  projectType: string;
+  recommendedMode: string;
+  detectedStack: string[];
+  risks: string[];
+  existingDocs: string[];
+  hasDiagnosis: boolean;
+  confidence: "baixa" | "media" | "alta";
+}
+
+export interface PlanningOutput {
+  summary: string;
+  nextRecommendedAction: string;
+  milestones: string[];
+  backlogItems: string[];
+  executionPrompts: string[];
+  validationChecklist: string[];
+  hasCriticalRisk: boolean;
 }
