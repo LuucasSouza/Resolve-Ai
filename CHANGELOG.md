@@ -21,6 +21,9 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 13.1 executada para reconciliar os arquivos bootstrap `pt211` a `pt220` com a Phase 13 já concluída.
+- Criado relatório `docs/sprints/phase-13-bootstrap-source-reconciliation.md`.
+- Preservados `pt211` a `pt220` em `bootstrap-source/`.
 - Phase 13 executada.
 - Criados relatórios pendentes de validação real por perfil.
 - Criado resumo consolidado de validação real.

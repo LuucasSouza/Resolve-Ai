@@ -18,6 +18,11 @@ last_updated: "2026-07-04"
 
 - Nenhum usuário real esteve disponível para validação.
 - A Phase 13 não pode aprovar public npm.
+- Os arquivos bootstrap `pt211` a `pt220` não estavam presentes durante a primeira execução da Phase 13, exigindo reconciliação posterior de rastreabilidade.
+
+## Lição aprendida
+
+Antes de executar uma fase, verificar explicitamente a presença dos arquivos bootstrap esperados. Se a fonte chegar depois da execução, a resposta correta é reconciliar e registrar lacunas, não reexecutar a fase nem duplicar decisões.
 
 ## Decisão
 

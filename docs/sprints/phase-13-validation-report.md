@@ -8,6 +8,12 @@ last_updated: "2026-07-04"
 
 # Phase 13 Validation Report
 
+## Nota de reconciliação
+
+A primeira execução da Phase 13 foi concluída, commitada e enviada antes de os arquivos `pt211` a `pt220` estarem presentes no repositório. Em 2026-07-04, a Phase 13.1 preservou esses arquivos em `bootstrap-source/`, comparou seu conteúdo com os artefatos produzidos e registrou a reconciliação em `docs/sprints/phase-13-bootstrap-source-reconciliation.md`.
+
+Resultado da reconciliação: nenhuma lacuna material foi encontrada. A Phase 13 permanece válida e a decisão `LIMITED GO` não foi alterada.
+
 ## Testes executados
 
 ```bash
