@@ -28,4 +28,4 @@ last_updated: "2026-07-04"
 
 ## Próxima Fase
 
-Phase 8 — Resolve Aí Guided Review and Validation.
+Phase 8 — Resolve Aí Guided Assisted Execution.

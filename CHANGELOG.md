@@ -21,6 +21,18 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 8 executada.
+- Implementado comando `resolve-ai resolver`.
+- Implementados aliases `resolva` e `fazer`.
+- Criada geração dos documentos `docs/resolve-ai/20` a `24`.
+- Criada aprovação humana documental antes da execução assistida.
+- Criado prompt final para agente externo.
+- Criado checklist pós-execução e registro de execução.
+- Atualizado `.resolve-ai/state.json` com `ultimaExecucaoAssistida` e `canAutoExecute: false`.
+- Atualizado `resolve-ai status` para mostrar execução assistida pendente.
+- Criados testes automatizados para execução assistida.
+- Criadas ADRs 0136 a 0145.
+- Criados Phase 8 handoff, validation report e retrospective.
 - Phase 7 executada.
 - Implementado comando `resolve-ai preparar`.
 - Implementados aliases `tarefa` e `executar`.

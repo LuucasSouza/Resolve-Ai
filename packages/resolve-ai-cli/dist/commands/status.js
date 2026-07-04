@@ -44,6 +44,23 @@ Próximo passo:
 Leia docs/resolve-ai/16-prompt-de-implementacao.md.
 `
     : "";
+  const assistedExecutionSummary = state.ultimaExecucaoAssistida
+    ? `
+Execução assistida: ${state.ultimaExecucaoAssistida.status}
+
+Tarefa:
+${state.ultimaExecucaoAssistida.tarefa}
+
+Risco: ${state.ultimaExecucaoAssistida.risco}
+Autoexecução: não
+
+Próximo passo:
+Leia docs/resolve-ai/21-aprovacao-humana.md e use o prompt em docs/resolve-ai/22-prompt-final-para-agente.md.
+
+Importante:
+Eu ainda não mexi no código.
+`
+    : "";
   const disabledSummary = state.active === false ? "\nResolve Aí está desligado. Para preparar com contexto completo, rode: resolve-ai ligar\n" : "";
 
   if (state.active) {
@@ -56,6 +73,7 @@ Estado: .resolve-ai/state.json
 ${diagnosticSummary}
 ${planningSummary}
 ${preparedSummary}
+${assistedExecutionSummary}
 `);
     return;
   }
@@ -69,6 +87,7 @@ Estado: .resolve-ai/state.json
 ${diagnosticSummary}
 ${planningSummary}
 ${preparedSummary}
+${assistedExecutionSummary}
 ${disabledSummary}
 
 Para ligar:

@@ -107,3 +107,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Phase 7
 
 - A CLI passa a preparar uma tarefa segura com pacote de execução, prompt, validação, riscos e handoff, sem executar código.
+
+## Phase 8
+
+- A CLI passa a transformar a tarefa preparada em execução assistida com aprovação humana, prompt final, checklist pós-execução e registro, sem executar código automaticamente.

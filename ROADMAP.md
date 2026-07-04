@@ -490,13 +490,34 @@ Preparar execução segura de uma tarefa do backlog, ainda sem automação destr
 
 ---
 
-# Phase 8 — Resolve Aí Guided Review and Validation
+# Phase 8 — Resolve Aí Guided Assisted Execution
+
+Status: **Complete**
+
+## Objetivo
+
+Transformar a tarefa preparada em pacote de execução assistida, com aprovação humana, prompt final para agente, checklist pós-execução e registro.
+
+## Entregáveis
+
+- Comando `resolve-ai resolver`.
+- Aliases `resolva` e `fazer`.
+- Documentos `docs/resolve-ai/20` a `24`.
+- Aprovação humana antes da execução.
+- Prompt final para agente externo.
+- Checklist pós-execução.
+- `ultimaExecucaoAssistida` em `.resolve-ai/state.json`.
+- ADRs 0136 a 0145.
+
+---
+
+# Phase 9 — Resolve Aí Guided Review and Validation
 
 Status: **Next**
 
 ## Objetivo
 
-Validar uma tarefa executada, comparar com pacote de execução, atualizar status, gerar relatório e preparar handoff.
+Validar uma tarefa executada fora da CLI, comparar resultado com pacote de execução assistida, atualizar status, gerar relatório e preparar handoff.
 
 ## Entregáveis previstos
 

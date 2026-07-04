@@ -11,6 +11,9 @@ Comandos disponíveis:
   resolve-ai diagnosticar Gera diagnóstico local seguro
   resolve-ai planejar     Cria plano, backlog, sprints e prompts
   resolve-ai preparar     Prepara uma tarefa segura para execução futura
+  resolve-ai resolver     Prepara execução assistida com aprovação humana
+  resolve-ai resolva      Alias de resolver
+  resolve-ai fazer        Alias de resolver
   resolve-ai ligar        Liga o Resolve Aí neste projeto
   resolve-ai desligar     Desliga para economizar contexto e tokens
   resolve-ai status       Mostra como o Resolve Aí está neste projeto

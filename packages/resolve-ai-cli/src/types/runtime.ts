@@ -35,6 +35,7 @@ export interface ResolveAiState {
   nextRecommendedAction?: string;
   planningConfidence?: "baixa" | "media" | "alta";
   ultimoPreparo?: PreparedTaskState;
+  ultimaExecucaoAssistida?: AssistedExecutionState;
 }
 
 export interface InitResult {
@@ -116,4 +117,32 @@ export interface PreparedTask {
   risks: string[];
   stopConditions: string[];
   reason: string;
+}
+
+export type AssistedExecutionRisk = "baixo" | "medio" | "alto" | "bloqueada";
+
+export interface AssistedExecutionState {
+  criadaEm: string;
+  status: "pendente";
+  tarefa: string;
+  risco: AssistedExecutionRisk;
+  canAutoExecute: false;
+  proximoPasso: string;
+  docsGerados: string[];
+}
+
+export interface AssistedExecutionPackage {
+  taskTitle: string;
+  risk: AssistedExecutionRisk;
+  confidence: "baixa" | "media" | "alta";
+  hasPreparedTask: boolean;
+  canAutoExecute: false;
+  scope: string[];
+  outOfScope: string[];
+  references: string[];
+  restrictions: string[];
+  validation: string[];
+  risks: string[];
+  stopCriteria: string[];
+  nextStep: string;
 }

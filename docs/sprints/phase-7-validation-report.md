@@ -44,6 +44,5 @@ fail 0
 
 ## Pendências
 
-- `resolve-ai resolver` não implementado.
 - Aprovação humana ainda é documental.
-- Validação pós-execução fica para Phase 8.
+- Validação pós-execução fica para Phase 9.

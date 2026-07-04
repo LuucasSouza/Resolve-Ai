@@ -57,3 +57,6 @@ Registrar handoffs, relatórios de validação e status das sprints do AI-SEOS.
 - `phase-7-handoff.md`
 - `phase-7-validation-report.md`
 - `phase-7-retrospective.md`
+- `phase-8-handoff.md`
+- `phase-8-validation-report.md`
+- `phase-8-retrospective.md`

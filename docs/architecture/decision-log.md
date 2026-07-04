@@ -117,3 +117,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0133 | Extend Status with Prepared Task Summary | Accepted | 2026-07-04 | Medium | Phase 8 |
 | ADR-0134 | Preserve Documents by Default | Accepted | 2026-07-04 | High | Phase 8 |
 | ADR-0135 | Defer resolver Command to Future Phase | Accepted | 2026-07-04 | High | Phase 8 |
+| ADR-0136 | Adopt resolver as Assisted Execution Command | Accepted | 2026-07-04 | Medium | Phase 9 |
+| ADR-0137 | Keep Execution Non-Automatic by Default | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0138 | Adopt Human Approval Document Before Execution | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0139 | Adopt Final Agent Prompt as Execution Handoff | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0140 | Adopt Assisted Execution Document Set 20-24 | Accepted | 2026-07-04 | Medium | Phase 9 |
+| ADR-0141 | Prioritize Safety Gates Over Speed | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0142 | Respect Modo Liga/Desliga During Execution Prep | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0143 | Defer Automatic Code Execution | Accepted | 2026-07-04 | High | Phase 9 |
+| ADR-0144 | Adopt Post-Execution Checklist | Accepted | 2026-07-04 | Medium | Phase 9 |
+| ADR-0145 | Prepare Phase 9 Validation Command | Accepted | 2026-07-04 | Medium | Phase 9 |

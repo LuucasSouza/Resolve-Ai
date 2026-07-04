@@ -18,6 +18,9 @@ Esta versão implementa apenas comandos locais e não destrutivos:
 - `resolve-ai preparar`
 - `resolve-ai tarefa`
 - `resolve-ai executar`
+- `resolve-ai resolver`
+- `resolve-ai resolva`
+- `resolve-ai fazer`
 - `resolve-ai ligar`
 - `resolve-ai desligar`
 - `resolve-ai status`
@@ -30,6 +33,7 @@ node packages/resolve-ai-cli/dist/index.js começar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
 node packages/resolve-ai-cli/dist/index.js planejar
 node packages/resolve-ai-cli/dist/index.js preparar
+node packages/resolve-ai-cli/dist/index.js resolver
 node packages/resolve-ai-cli/dist/index.js status
 node packages/resolve-ai-cli/dist/index.js ligar
 node packages/resolve-ai-cli/dist/index.js desligar
@@ -99,6 +103,24 @@ docs/resolve-ai/19-handoff-de-execucao.md
 ```
 
 `canAutoExecute` é sempre `false` nesta fase.
+
+## O Que o Comando `resolver` Cria
+
+O comando transforma a tarefa preparada em execução assistida. Ele não altera código, não executa a tarefa, não faz commit e não faz deploy.
+
+Com o Resolve Aí ligado, ele gera, sem sobrescrever arquivos existentes:
+
+```text
+docs/resolve-ai/20-execucao-assistida.md
+docs/resolve-ai/21-aprovacao-humana.md
+docs/resolve-ai/22-prompt-final-para-agente.md
+docs/resolve-ai/23-checklist-pos-execucao.md
+docs/resolve-ai/24-registro-de-execucao.md
+```
+
+Também atualiza `.resolve-ai/state.json` com `ultimaExecucaoAssistida`.
+
+`canAutoExecute` continua sempre `false`.
 
 ## Fora de Escopo
 

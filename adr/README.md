@@ -164,7 +164,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0133-extend-status-with-prepared-task-summary.md`
 - `0134-preserve-documents-by-default.md`
 - `0135-defer-resolver-command-to-future-phase.md`
+- `0136-adopt-resolver-as-assisted-execution-command.md`
+- `0137-keep-execution-non-automatic-by-default.md`
+- `0138-adopt-human-approval-document-before-execution.md`
+- `0139-adopt-final-agent-prompt-as-execution-handoff.md`
+- `0140-adopt-assisted-execution-document-set-20-24.md`
+- `0141-prioritize-safety-gates-over-speed.md`
+- `0142-respect-modo-liga-desliga-during-execution-prep.md`
+- `0143-defer-automatic-code-execution.md`
+- `0144-adopt-post-execution-checklist.md`
+- `0145-prepare-phase-9-validation-command.md`
 
 ## Próximos passos
 
-- Iniciar Phase 8 — Resolve Aí Guided Review and Validation.
+- Iniciar Phase 9 — Resolve Aí Guided Review and Validation.
