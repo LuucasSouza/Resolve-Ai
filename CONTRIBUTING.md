@@ -114,6 +114,15 @@ Para feedback após uso real do framework, consulte `docs/community/feedback-and
 
 Durante a migração de nome, contribuições devem usar Resolve Aí em conteúdo público novo e preservar AI-SEOS apenas quando o contexto for histórico, técnico ou legado.
 
+Contribuições para runtime devem respeitar a Phase 3:
+
+- não implementar CLI fora do escopo da Phase 4 ou ADR correspondente;
+- não prometer funcionalidade executável onde há apenas especificação;
+- manter comandos e UX pública em português;
+- preservar Modo Liga/Desliga como nome oficial;
+- tratar `.resolve-ai/` como estado local e `docs/resolve-ai/` como documentação humana;
+- evitar qualquer exposição de secrets, dados pessoais ou conteúdo sensível.
+
 ---
 
 # 5. Padrão de commits

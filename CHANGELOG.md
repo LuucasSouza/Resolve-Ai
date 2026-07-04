@@ -21,6 +21,18 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 3 executada.
+- Criada Runtime Vision do Resolve Aí.
+- Criada arquitetura da futura CLI `resolve-ai`, sem implementação nesta fase.
+- Documentado Modo Liga/Desliga como controle público oficial.
+- Documentado Project Adapter com `.resolve-ai/` e `docs/resolve-ai/`.
+- Formalizado fluxo “Projeto em Andamento — Diagnóstico e Continuação”.
+- Documentada estratégia CLI-first, MCP/adapters later.
+- Criadas mensagens de comandos e UX copy em português.
+- Criada documentação de segurança, privacidade e economia de tokens da runtime.
+- Criados templates runtime e arquivos de instrução para agentes.
+- Criadas ADRs 0087 a 0096.
+- Criados Phase 3 handoff, validation report e retrospective.
 - Phase 2.5 executada.
 - Resolve Aí adotado como nome público oficial do projeto.
 - AI-SEOS mantido como nome técnico/histórico durante a transição.

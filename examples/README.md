@@ -54,3 +54,7 @@ Example Maintainers garantem qualidade, segurança e aderência aos protocolos.
 
 - `validation/`: first end-to-end validation case e casos de validação por perfil.
 - `real-world/senseihub/`: primeiro caso real completo de validação.
+
+## Phase 3
+
+- `runtime/`: exemplos conceituais de uso da futura CLI `resolve-ai`, incluindo Modo Liga/Desliga e diagnóstico de projeto existente.

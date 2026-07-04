@@ -115,7 +115,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0084-insert-phase-2-5-before-runtime-productization.md`
 - `0085-adopt-dual-audience-communication-model.md`
 - `0086-adopt-runtime-direction-inspired-by-ease-of-use.md`
+- `0087-adopt-resolve-ai-runtime-layer.md`
+- `0088-adopt-portuguese-first-cli-commands.md`
+- `0089-adopt-modo-liga-desliga.md`
+- `0090-adopt-project-adapter-with-local-state.md`
+- `0091-adopt-docs-resolve-ai-path.md`
+- `0092-adopt-existing-project-diagnostic-flow.md`
+- `0093-adopt-cli-first-mcp-later-strategy.md`
+- `0094-adopt-agent-instruction-file-generation.md`
+- `0095-adopt-token-saving-context-strategy.md`
+- `0096-adopt-safe-runtime-defaults.md`
 
 ## Próximos passos
 
-- Iniciar Phase 3 — Resolve Aí Runtime Productization.
+- Iniciar Phase 4 — Resolve Aí CLI MVP Implementation.

@@ -1,0 +1,18 @@
+﻿project:
+  name: "Nome do Projeto"
+  type: "new|existing|legacy|unknown"
+  detected_stack: []
+
+resolve_ai:
+  status: "desligado"
+  mode: "projeto-em-andamento"
+  language: "pt-BR"
+  docs_path: "docs/resolve-ai"
+  legacy_docs_path: "docs/ai-seos"
+  token_saving: true
+
+safety:
+  allow_code_changes_without_plan: false
+  allow_dependency_install_without_approval: false
+  allow_commit_without_approval: false
+  allow_push_without_approval: false

@@ -87,3 +87,7 @@ Framework Maintainers mantêm modularidade, aplicabilidade e alinhamento com eng
 ## Phase 2
 
 - SenseiHub e first end-to-end validation case funcionam como validação inicial do framework completo.
+
+## Phase 3
+
+- `runtime-framework/`: camada conceitual que conecta CLI futura, Modo Liga/Desliga, Project Adapter, fluxos de entrada, agentes e segurança/token saving.

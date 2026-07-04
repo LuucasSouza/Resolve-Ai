@@ -1,0 +1,10 @@
+﻿{
+  "status": "desligado",
+  "mode": "projeto-em-andamento",
+  "projectType": "existing",
+  "lastAction": null,
+  "lastContextUpdate": null,
+  "nextSuggestedAction": "executar diagnÃ³stico inicial",
+  "tokenSaving": true,
+  "criticalRisksOpen": 0
+}

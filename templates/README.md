@@ -111,3 +111,9 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 ## Phase 2.5
 
 - `prompts/`: existing project assessment prompt para uso do Resolve Aí em repositórios existentes.
+
+## Phase 3
+
+- `runtime/`: templates de `config.yml` e `state.json` para a runtime futura.
+- `agent-instructions/`: templates para AGENTS.md, CLAUDE.md e Copilot instructions.
+- `prompts/runtime/`: prompt de diagnóstico runtime para projetos em andamento.

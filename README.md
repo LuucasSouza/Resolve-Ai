@@ -140,7 +140,7 @@ O futuro runtime deve usar o comando:
 resolve-ai
 ```
 
-O CLI ainda não foi implementado; a Phase 2.5 apenas prepara o naming para a Phase 3.
+O CLI ainda não foi implementado; a Phase 3 especificou a arquitetura runtime e a Phase 4 deve implementar o primeiro MVP executável.
 
 ---
 
@@ -247,7 +247,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Phase 2.5 concluída**
+Status atual: **Phase 3 concluída**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -352,7 +352,21 @@ Phase 2.5 renomeou e reposicionou publicamente o projeto:
 - ADRs 0081 a 0086;
 - relatório de validação em `docs/sprints/phase-2-5-validation-report.md`.
 
-Próxima etapa: **Phase 3 — Resolve Aí Runtime Productization**.
+Phase 3 consolidou a arquitetura runtime do Resolve Aí:
+
+- visão runtime para transformar o framework em camada ativável por projeto;
+- arquitetura da futura CLI `resolve-ai`, sem implementação nesta fase;
+- Modo Liga/Desliga como controle público oficial;
+- Project Adapter com `.resolve-ai/` para estado local e `docs/resolve-ai/` para documentação humana;
+- fluxo oficial “Projeto em Andamento — Diagnóstico e Continuação”;
+- estratégia CLI-first, MCP/adapters depois;
+- comandos e UX copy em português;
+- segurança, privacidade e economia de tokens como defaults;
+- templates runtime e arquivos de instrução para agentes;
+- ADRs 0087 a 0096;
+- relatório de validação em `docs/sprints/phase-3-validation-report.md`.
+
+Próxima etapa: **Phase 4 — Resolve Aí CLI MVP Implementation**.
 
 ---
 

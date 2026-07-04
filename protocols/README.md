@@ -86,3 +86,9 @@ Protocol Maintainers garantem consistência com `DEVELOPMENT_PROTOCOL.md`.
 - `end-to-end-validation/`: protocolo para validar o lifecycle completo.
 - `user-validation/`: protocolos de validação por perfil.
 - `feedback/`: protocolo de triagem de feedback e melhoria contínua.
+
+## Phase 3
+
+- `runtime-activation/`: protocolo do Modo Liga/Desliga.
+- `project-entry/`: protocolo de entrada para projeto novo ou existente.
+- `existing-project-diagnostics/`: fluxo “Projeto em Andamento — Diagnóstico e Continuação”.

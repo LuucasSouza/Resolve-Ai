@@ -79,3 +79,10 @@ Documentation Maintainers mantêm consistência, clareza, versionamento e relaç
 - `product-positioning/`: posicionamento público.
 - `runtime/`: preparação do naming `resolve-ai` para Phase 3.
 - `getting-started/use-resolve-ai-in-existing-project.md`: guia para aplicar Resolve Aí em repositórios existentes.
+
+## Documentação adicionada na Phase 3
+
+- `runtime/`: Runtime Vision, CLI Architecture, Modo Liga/Desliga, Project Adapter, Project Entry Flows, agent adapters, UX copy, segurança, privacidade e economia de tokens.
+- `sprints/phase-3-handoff.md`: handoff da Phase 3.
+- `sprints/phase-3-validation-report.md`: validação da Phase 3.
+- `sprints/phase-3-retrospective.md`: retrospectiva da Phase 3.

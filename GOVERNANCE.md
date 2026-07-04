@@ -205,7 +205,24 @@ Durante a transição de naming, referências públicas devem usar Resolve Aí. 
 
 ---
 
-# 12. Papel da IA na governança
+# 12. Governança da runtime
+
+A camada runtime do Resolve Aí deve evoluir por ADRs e validação explícita.
+
+Regras:
+
+- documentação da runtime não deve prometer CLI funcional antes da implementação;
+- comandos públicos devem priorizar português;
+- Modo Liga/Desliga deve ser respeitado por CLI, agents, hooks e adapters futuros;
+- projetos existentes devem passar por diagnóstico, plano e riscos antes de mudanças em código;
+- `.resolve-ai/` é estado operacional local;
+- `docs/resolve-ai/` é documentação humana preferida;
+- secrets, dados pessoais e arquivos sensíveis não devem ser expostos em logs, prompts ou handoffs;
+- MCP e adapters avançados só devem avançar depois do CLI MVP validado.
+
+---
+
+# 13. Papel da IA na governança
 
 Agentes de IA podem:
 
@@ -226,7 +243,7 @@ Agentes de IA não devem:
 
 ---
 
-# 13. Frase de governança
+# 14. Frase de governança
 
 ```text
 AI-SEOS deve evoluir rápido, mas nunca de forma caótica.

@@ -68,3 +68,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0084 | Insert Phase 2.5 Before Runtime Productization | Accepted | 2026-07-04 | High | Phase 3 |
 | ADR-0085 | Adopt Dual Audience Communication Model | Accepted | 2026-07-04 | Medium | Phase 3 |
 | ADR-0086 | Adopt Runtime Direction Inspired by Ease of Use | Accepted | 2026-07-04 | Medium | Phase 3 |
+| ADR-0087 | Adopt Resolve Aí Runtime Layer | Accepted | 2026-07-04 | Medium | Phase 4 |
+| ADR-0088 | Adopt Portuguese-First CLI Commands | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0089 | Adopt Modo Liga/Desliga | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0090 | Adopt Project Adapter with Local State | Accepted | 2026-07-04 | Medium | Phase 4 |
+| ADR-0091 | Adopt docs/resolve-ai Path | Accepted | 2026-07-04 | Medium | Phase 4 |
+| ADR-0092 | Adopt Existing Project Diagnostic Flow | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0093 | Adopt CLI-First, MCP-Later Strategy | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0094 | Adopt Agent Instruction File Generation | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0095 | Adopt Token-Saving Context Strategy | Accepted | 2026-07-04 | High | Phase 4 |
+| ADR-0096 | Adopt Safe Runtime Defaults | Accepted | 2026-07-04 | High | Phase 4 |

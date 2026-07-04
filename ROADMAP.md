@@ -381,7 +381,7 @@ Phase 2.5 foi inserida antes da Phase 3 para evitar criar comandos, fluxos de in
 
 # Phase 3 — Resolve Aí Runtime Productization
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
@@ -394,18 +394,39 @@ Transformar Resolve Aí de framework documental em uma ferramenta ativável dent
 - Caminho legado aceito durante transição: `docs/ai-seos/`.
 - Não copiar Context Mode; usar inspiração de facilidade de uso para software engineering orchestration.
 
-## Partes previstas
+## Entregáveis
 
-- `pt111_RESOLVE_AI_RUNTIME_VISION.md`
-- `pt112_RESOLVE_AI_CLI_ARCHITECTURE.md`
-- `pt113_RESOLVE_AI_MCP_SERVER_ARCHITECTURE.md`
-- `pt114_RESOLVE_AI_PROJECT_ADAPTER.md`
-- `pt115_AGENT_ROUTING_AND_INSTRUCTION_FILES.md`
-- `pt116_HOOKS_AND_SESSION_MEMORY.md`
-- `pt117_COMMANDS_AND_TOOL_CONTRACTS.md`
-- `pt118_INSTALLATION_AND_PLATFORM_ADAPTERS.md`
-- `pt119_RUNTIME_SECURITY_AND_PRIVACY.md`
-- `pt120_PHASE_3_HANDOFF.md`
+- Runtime Vision.
+- CLI Architecture para futura `resolve-ai`.
+- Modo Liga/Desliga como nome público oficial.
+- Project Adapter e estado local com `.resolve-ai/`.
+- Caminho documental `docs/resolve-ai/`.
+- Project Entry Flows.
+- Fluxo oficial “Projeto em Andamento — Diagnóstico e Continuação”.
+- Estratégia CLI-first, MCP/adapters later.
+- UX copy em português.
+- Segurança, privacidade e economia de tokens.
+- Templates runtime e agent instruction files.
+- ADRs 0087 a 0096.
+
+---
+
+# Phase 4 — Resolve Aí CLI MVP Implementation
+
+Status: **Next**
+
+## Objetivo
+
+Implementar o primeiro MVP executável da CLI `resolve-ai`, mantendo escopo pequeno, local e seguro.
+
+## Entregáveis previstos
+
+- Package skeleton da CLI.
+- Comandos `ajuda`, `começar`, `ligar`, `desligar` e `status`.
+- Criação local segura de `.resolve-ai/`.
+- Criação inicial de `docs/resolve-ai/`.
+- Geração de arquivos de instrução para agentes.
+- Guards para impedir mudanças destrutivas por padrão.
 
 ---
 
