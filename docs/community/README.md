@@ -24,6 +24,12 @@ Community docs explain how to contribute protocols, templates, frameworks, playb
 - Validação real continuou pendente por indisponibilidade de usuários.
 - Próxima contribuição mais importante: participar de validação real controlada.
 
+## Phase 14
+
+- `real-alpha-feedback-backlog.md`
+- `real-alpha-feedback-triage.md`
+- Validação real continuou pendente e bloqueia GO público.
+
 ## Feedback
 
 Feedback should be classified by type, severity, affected profile and owner before becoming an improvement item or ADR.

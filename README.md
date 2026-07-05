@@ -270,7 +270,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Phase 13 concluída**
+Status atual: **Phase 14 concluída — LIMITED GO**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -510,7 +510,18 @@ Phase 13 executou o gate de validação real e decisão de release:
 - ADRs 0186 a 0195;
 - relatório de validação em `docs/sprints/phase-13-validation-report.md`.
 
-Próxima etapa: **Phase 14 — Real User Validation Execution**.
+Phase 14 executou novo gate de validação real e decisão de release:
+
+- plano e matriz de validação real criados em `docs/alpha-validation/real-users/`;
+- relatórios por perfil criados como pendentes, sem inventar feedback real;
+- templates de sessão, observação, moderação e feedback criados;
+- backlog e triagem de feedback real atualizados;
+- package review e scorecard de release da Phase 14 criados;
+- readiness score recalibrado: 78/100, LIMITED GO;
+- ADRs 0196 a 0205;
+- relatório de validação em `docs/sprints/phase-14-validation-report.md`.
+
+Próxima etapa: **Phase 15A — Private Alpha Expansion and Fixes**.
 
 ---
 

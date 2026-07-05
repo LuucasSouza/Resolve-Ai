@@ -145,3 +145,10 @@ Template Maintainers mantêm consistência, clareza e versionamento dos modelos.
 ## Phase 10
 
 - A documentação de release define checklist e política de uso local para validar a CLI antes de publicação.
+
+## Phase 14
+
+- `feedback/real-alpha-participant-feedback.md`: formulário de feedback de participante real.
+- `validation/real-alpha-session-report-template.md`: relatório de sessão real alpha.
+- `validation/real-alpha-moderator-script.md`: script de moderação.
+- `validation/real-alpha-observation-sheet.md`: folha de observação.

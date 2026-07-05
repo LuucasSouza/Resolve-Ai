@@ -36,6 +36,13 @@ Release documentation covers readiness, known limitations, release notes, reposi
 - `v0.1.0-alpha-blocker-correction-backlog.md`
 - `v0.1.0-alpha-phase-13-release-decision.md`
 
+## Phase 14
+
+- `v0.1.0-alpha-phase-14-readiness-scorecard.md`
+- `v0.1.0-alpha-phase-14-go-no-go-decision.md`
+- `v0.1.0-alpha-phase-14-blockers.md`
+- `v0.1.0-alpha-phase-14-package-review.md`
+
 ## Current Recommendation
 
-Resolve Ai remains a LIMITED GO alpha candidate with score 79/100 after package review. Do not publish to npm until real-user validation is complete and maintainer approval is recorded.
+Resolve Ai remains a LIMITED GO alpha candidate with score 78/100 after Phase 14. Do not publish to npm until real-user validation is complete and maintainer approval is recorded.

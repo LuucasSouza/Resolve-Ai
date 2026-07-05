@@ -21,6 +21,14 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 14 executada como gate de validação real e decisão de release.
+- Criados plano, matriz, relatórios pendentes por perfil, achados consolidados e resumo de score em `docs/alpha-validation/real-users/`.
+- Criados templates de feedback, relatório de sessão, script de moderação e folha de observação para real alpha.
+- Criados backlog e triagem de feedback real em `docs/community/`.
+- Criados scorecard, decisão GO/LIMITED GO/NO-GO, blockers e package review da Phase 14 em `docs/release/`.
+- Criadas ADRs 0196 a 0205.
+- Criados Phase 14 handoff, validation report e retrospective.
+- Preservados `pt221` a `pt230` em `bootstrap-source/`.
 - Phase 13.1 executada para reconciliar os arquivos bootstrap `pt211` a `pt220` com a Phase 13 já concluída.
 - Criado relatório `docs/sprints/phase-13-bootstrap-source-reconciliation.md`.
 - Preservados `pt211` a `pt220` em `bootstrap-source/`.
@@ -269,6 +277,7 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Changed
 
+- Readiness score recalibrado de 79/100 para 78/100, mantendo LIMITED GO por ausência de validação real completa.
 - Melhorada detecção/exibição de stack provável da CLI para Node.js, TypeScript, Vite, React, Firebase, Supabase, Python e monorepo simples.
 - `resolve-ai status` agora mostra stack provável após diagnóstico.
 - Docs 00-09 agora registram stack provável com evidências seguras.

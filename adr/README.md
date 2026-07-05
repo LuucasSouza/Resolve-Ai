@@ -224,7 +224,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0193-separate-controlled-alpha-from-public-npm.md`
 - `0194-require-maintainer-release-approval.md`
 - `0195-prepare-phase-14-for-real-user-validation-execution.md`
+- `0196-require-real-user-validation-before-public-alpha.md`
+- `0197-use-anonymized-alpha-participant-ids.md`
+- `0198-separate-private-alpha-from-public-alpha-release.md`
+- `0199-use-go-limited-go-no-go-release-gate.md`
+- `0200-treat-resolver-confusion-as-release-blocker.md`
+- `0201-require-profile-based-validation-coverage.md`
+- `0202-avoid-sensitive-data-in-alpha-validation.md`
+- `0203-use-human-feedback-to-recalibrate-readiness-score.md`
+- `0204-keep-npm-publication-manual-after-validation.md`
+- `0205-define-phase-15-branching-based-on-release-decision.md`
 
 ## Próximos passos
 
-- Iniciar Phase 14 — Real User Validation Execution.
+- Iniciar Phase 15A - Private Alpha Expansion and Fixes.

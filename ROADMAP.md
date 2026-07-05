@@ -616,18 +616,38 @@ Conduzir ou preparar validação real, revisar blockers, revisar pacote npm e re
 
 # Phase 14 — Real User Validation Execution
 
-Status: **Next**
+Status: **Complete**
 
 ## Objetivo
 
 Executar validação real com usuários dos três perfis antes de qualquer public alpha npm.
 
+## Entregáveis
+
+- Validação real registrada como pendente por indisponibilidade de participantes.
+- Três perfis mantidos como pendentes.
+- Feedback consolidado por severidade preparado para sessões reais.
+- Decisão revisada: 78/100, LIMITED GO.
+- Templates e backlog de feedback real criados.
+- ADRs 0196 a 0205.
+
+---
+
+# Phase 15A — Private Alpha Expansion and Fixes
+
+Status: **Next**
+
+## Objetivo
+
+Expandir private alpha com participantes reais dos três perfis, corrigir P1/P2 observados e repetir o gate antes de public npm.
+
 ## Entregáveis previstos
 
-- Ao menos uma validação real registrada.
-- Preferencialmente três perfis validados.
-- Feedback consolidado por severidade.
-- Decisão revisada GO / LIMITED GO / NO-GO.
+- Uma sessão real por perfil, no mínimo.
+- Feedback anonimizado.
+- Revisão de copy do `resolver` baseada em evidência.
+- Score recalibrado com feedback humano.
+- Nova decisão GO / LIMITED GO / NO-GO.
 
 ---
 

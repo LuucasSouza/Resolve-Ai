@@ -218,3 +218,5 @@ Resultado: todos os comandos passaram nos cenários simulados, sem publicação 
 Na Phase 12, P1/P2 técnicos foram corrigidos e o score subiu para 80/100, com recomendação LIMITED GO para alpha controlada. Public npm continua pendente de validação real.
 
 Na Phase 13, o pacote foi revisado com `npm pack --dry-run` e o `package.json` passou a usar `files` para restringir uma publicação futura a `dist` e `README.md`. Nenhuma publicação npm foi feita.
+
+Na Phase 14, a validação real continuou pendente por indisponibilidade de participantes. A decisão permaneceu LIMITED GO com score 78/100. Publicação npm, tag Git e GitHub release continuam fora de escopo até validação real e aprovação manual.

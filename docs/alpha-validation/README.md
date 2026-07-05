@@ -47,6 +47,16 @@ Maintainers devem executar ou revisar cenarios, registrar achados, classificar s
 - `real-users/consolidated-real-validation-summary.md`
 - `phase-13-alpha-feedback-analysis.md`
 
+## Phase 14
+
+- `real-users/phase-14-real-user-validation-plan.md`
+- `real-users/phase-14-real-user-validation-matrix.md`
+- `real-users/phase-14-non-technical-builder-session.md`
+- `real-users/phase-14-vibe-coder-session.md`
+- `real-users/phase-14-professional-engineer-session.md`
+- `real-users/phase-14-consolidated-findings.md`
+- `real-users/profile-score-summary.md`
+
 ## Proximos passos
 
-Executar validacoes com usuarios reais nos tres perfis e atualizar o scorecard de release.
+Executar Phase 15A com usuarios reais nos tres perfis e atualizar o scorecard de release com evidencia humana.
