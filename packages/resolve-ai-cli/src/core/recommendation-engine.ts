@@ -11,7 +11,7 @@ export function nextActions(detection: ProjectDetection): string[] {
 
   if (detection.projectType === "novo") {
     return [
-      "Fazer entrevista de discovery",
+      "Rodar resolve-ai entrevistar",
       "Definir MVP",
       "Criar plano antes de escrever código"
     ];

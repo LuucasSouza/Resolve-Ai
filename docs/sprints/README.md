@@ -87,3 +87,6 @@ Registrar handoffs, relatórios de validação e status das sprints do AI-SEOS.
 - `phase-16-simple-test-folder-handoff.md`
 - `phase-16-simple-test-folder-validation-report.md`
 - `phase-16-simple-test-folder-retrospective.md`
+- `phase-17-guided-discovery-interview-handoff.md`
+- `phase-17-guided-discovery-interview-validation-report.md`
+- `phase-17-guided-discovery-interview-retrospective.md`

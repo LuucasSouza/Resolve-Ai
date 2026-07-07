@@ -34,6 +34,9 @@ Não gerei documentos de validação e não atualizei ultimaValidacao.
       mudancasDetectadas: result.mudancasDetectadas,
       arquivosAlterados: result.arquivosAlterados,
       arquivosSensiveisDetectados: result.arquivosSensiveisDetectados,
+      artefatosResolveAi: result.artefatosResolveAi,
+      arquivosProjeto: result.arquivosProjeto,
+      arquivosDesconhecidos: result.arquivosDesconhecidos,
       riscosRestantes: result.riscosRestantes,
       proximaAcao: result.proximaAcao
     },
@@ -53,8 +56,15 @@ Validação concluída.
 Status: ${result.status}
 Confiança: ${result.confianca}
 Arquivos alterados detectados: ${result.mudancasDetectadas}
+Arquivos gerados pelo Resolve Aí: ${result.artefatosResolveAi ?? 0}
+Arquivos reais do projeto: ${result.arquivosProjeto ?? 0}
 Arquivos sensíveis detectados: ${result.arquivosSensiveisDetectados.length}
+Arquivos desconhecidos: ${result.arquivosDesconhecidos ?? 0}
 ${gitNotice}
+
+Observação:
+Arquivos em docs/resolve-ai/, .resolve-ai/ e teste/ são artefatos da própria ferramenta.
+Eles não significam, por si só, que o código do produto foi alterado.
 
 Documentos criados em docs/resolve-ai/25-29: ${docs.created.length}
 Documentos preservados: ${docs.preserved.length}

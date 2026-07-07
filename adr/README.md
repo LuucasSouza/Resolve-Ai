@@ -259,7 +259,17 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0228-require-participant-controlled-feedback-sharing.md`
 - `0229-keep-test-folder-separate-from-runtime-cli.md`
 - `0230-defer-github-feedback-automation.md`
+- `0236-adopt-guided-discovery-interview-for-empty-projects.md`
+- `0237-add-entrevistar-entrevista-and-ideia-commands.md`
+- `0238-populate-intake-discovery-and-product-definition-from-interview.md`
+- `0239-preserve-existing-human-content-during-interview-writes.md`
+- `0240-recommend-interview-when-project-appears-empty.md`
+- `0241-separate-resolve-ai-artifacts-from-product-changes-in-validation.md`
+- `0242-reduce-design-token-false-positives.md`
+- `0243-require-strong-evidence-before-detecting-next-js.md`
+- `0244-document-windows-path-and-node-fallback-more-clearly.md`
+- `0245-keep-guided-interview-local-and-non-telemetric.md`
 
 ## Próximos passos
 
-- Send `teste/` to real participants and collect `teste/feedback.md` manually.
+- Run real Non-Technical Builder validation using `resolve-ai entrevistar`.

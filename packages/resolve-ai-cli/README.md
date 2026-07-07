@@ -12,6 +12,9 @@ Esta versão implementa apenas comandos locais e não destrutivos:
 - `resolve-ai diagnosticar`
 - `resolve-ai diagnostico`
 - `resolve-ai diagnóstico`
+- `resolve-ai entrevistar`
+- `resolve-ai entrevista`
+- `resolve-ai ideia`
 - `resolve-ai planejar`
 - `resolve-ai plano`
 - `resolve-ai planejamento`
@@ -47,6 +50,7 @@ Execução direta:
 ```bash
 node packages/resolve-ai-cli/dist/index.js ajuda
 node packages/resolve-ai-cli/dist/index.js começar
+node packages/resolve-ai-cli/dist/index.js entrevistar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
 node packages/resolve-ai-cli/dist/index.js planejar
 node packages/resolve-ai-cli/dist/index.js preparar
@@ -120,6 +124,22 @@ Também atualiza `.resolve-ai/state.json` com tipo de projeto, modo recomendado,
 
 Stack provável pode incluir Node.js, TypeScript, Vite, React, Firebase, Supabase, Python e monorepo simples. A detecção é heurística e usa apenas sinais locais seguros.
 
+Em projeto vazio ou do zero, o diagnóstico recomenda `resolve-ai entrevistar` antes de planejar.
+
+## O Que o Comando `entrevistar` Cria
+
+O comando faz uma entrevista guiada local para projetos do zero. Ele não gera código, não chama APIs externas e não coleta dados sensíveis.
+
+Ele cria ou atualiza, sem sobrescrever por padrão:
+
+```text
+docs/resolve-ai/00-project-intake.md
+docs/resolve-ai/02-discovery.md
+docs/resolve-ai/03-product-definition.md
+```
+
+Também atualiza `.resolve-ai/state.json` com `ultimaEntrevista`.
+
 ## O Que o Comando `planejar` Cria
 
 O comando transforma diagnóstico e documentos existentes em plano incremental, sem alterar código do produto.
@@ -186,6 +206,8 @@ Também atualiza `.resolve-ai/state.json` com `ultimaValidacao`.
 
 Arquivos sensíveis por nome/caminho bloqueiam a validação e não têm conteúdo copiado.
 
+Na Phase 17, `validar` passou a separar artefatos Resolve Aí, arquivos reais do projeto, possíveis sensíveis e desconhecidos.
+
 ## Fora de Escopo
 
 - MCP.
@@ -232,3 +254,5 @@ Na Phase 14, a validação real continuou pendente por indisponibilidade de part
 Na Phase 15A, o alpha privado foi preparado com guias de recrutamento, consentimento, privacidade e sessões pendentes. Nenhuma alteração de comportamento da CLI foi aplicada sem feedback real. A decisão permaneceu LIMITED GO com score 77/100.
 
 Na Phase 15B, houve validação real parcial em projeto CS2 Clips. Foram aplicadas correções pequenas de instalação Windows, validação sem Git, próxima ação prioritária no status, seleção de tarefa com docs preenchidos, harmonização de risco e remoção de linhas em branco iniciais. A decisão permaneceu LIMITED GO com score 81/100.
+
+Na Phase 17, `resolve-ai entrevistar` foi implementado para projetos do zero e o score técnico subiu para 84/100. A decisão permanece LIMITED GO porque ainda falta validação real suficiente com Non-Technical Builder e Professional Engineer dedicado.

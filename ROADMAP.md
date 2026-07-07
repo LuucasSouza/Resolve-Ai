@@ -672,6 +672,44 @@ Executar a primeira rodada real de alpha privado com participantes dos três per
 
 ---
 
+# Phase 16 — Resolve Aí Simple Test Folder
+
+Status: **Complete**
+
+## Objetivo
+
+Criar uma pasta simples e copiável `teste/` para feedback alpha manual.
+
+## Entregas
+
+- Kit `teste/` com `COMECE_AQUI.md`, `PROMPT_PARA_IA.md`, `feedback.md`, segurança, comandos, exemplo e mensagem para amigo.
+- Feedback manual, sem GitHub Actions, telemetria ou envio automático.
+- ADRs 0226 a 0230.
+
+---
+
+# Phase 17 — Resolve Aí Guided Discovery Interview and Validation Fixes
+
+Status: **Complete**
+
+## Objetivo
+
+Implementar entrevista guiada para projeto do zero e corrigir problemas de validação/diagnóstico/onboarding encontrados em alpha feedback.
+
+## Entregas
+
+- `resolve-ai entrevistar`, `resolve-ai entrevista` e `resolve-ai ideia`.
+- Escrita/atualização segura de docs 00, 02 e 03.
+- Estado `ultimaEntrevista` em `.resolve-ai/state.json`.
+- Diagnóstico recomenda entrevista em projeto vazio.
+- `validar` classifica mudanças por categoria.
+- Falsos positivos de design tokens e Next.js reduzidos.
+- Ajuda e docs Windows melhorados.
+- Score recalibrado: 84/100, LIMITED GO.
+- ADRs 0236 a 0245.
+
+---
+
 # Manual Action — Recruit Remaining Private Alpha Participants
 
 Status: **Next**

@@ -21,6 +21,12 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Added
 
+- Phase 17 executada com `resolve-ai entrevistar`, aliases `entrevista` e `ideia`.
+- Criada entrevista guiada local para projetos do zero, preenchendo docs 00, 02 e 03 sem sobrescrever por padrão.
+- Criados docs runtime `guided-discovery-interview.md`, `project-zero-detection.md` e `validation-change-classification.md`.
+- Criados scorecard e decisão de release da Phase 17.
+- Criados Phase 17 handoff, validation report e retrospective.
+- Criadas ADRs 0236 a 0245.
 - Phase 16 executada com criacao da pasta simples `teste/` para alpha feedback manual.
 - Criados `teste/README.md`, `teste/COMECE_AQUI.md`, `teste/PROMPT_PARA_IA.md`, `teste/feedback.md`, `teste/SEGURANCA.md`, `teste/COMANDOS.md`, `teste/EXEMPLO_FEEDBACK_PREENCHIDO.md` e `teste/RESUMO_PARA_ENVIAR_AO_AMIGO.md`.
 - Criados Phase 16 handoff, validation report e retrospective.
@@ -299,6 +305,11 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 
 ## Changed
 
+- Readiness score recalibrado de 81/100 para 84/100, mantendo LIMITED GO por validação real incompleta dos perfis obrigatórios.
+- `resolve-ai diagnosticar` agora recomenda `resolve-ai entrevistar` em projeto vazio/do zero.
+- `resolve-ai validar` agora separa artefatos Resolve Aí, arquivos reais do projeto, possíveis sensíveis e desconhecidos.
+- Reduzidos falsos positivos de `design-tokens.css` e de Next.js em projetos Vite puros.
+- `resolve-ai ajuda` agora mostra fluxo recomendado, dependência leve entre comandos, dica Windows/npm link e fallback via Node.
 - Documentado fluxo manual de feedback via `teste/feedback.md`, sem GitHub Actions, workflows, telemetria ou envio automatico.
 - Readiness score recalibrado de 77/100 para 81/100, mantendo LIMITED GO por cobertura incompleta dos perfis.
 - Corrigida documentação de instalação local no Windows para recomendar `cd packages/resolve-ai-cli` seguido de `npm link`.

@@ -66,6 +66,7 @@ resolve-ai ajuda
 cd caminho/do/seu-projeto
 resolve-ai começar
 resolve-ai ligar
+resolve-ai entrevistar
 resolve-ai diagnosticar
 resolve-ai planejar
 resolve-ai preparar
@@ -107,6 +108,7 @@ Use aliases sem acento quando necessário:
 ```bash
 resolve-ai comecar
 resolve-ai diagnostico
+resolve-ai entrevista
 ```
 
 ## Estado local

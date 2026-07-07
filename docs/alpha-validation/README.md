@@ -91,6 +91,12 @@ Maintainers devem executar ou revisar cenarios, registrar achados, classificar s
 - `../../teste/PROMPT_PARA_IA.md`: prompt pronto para a IA acompanhar o teste.
 - `../../teste/feedback.md`: formulario vivo preenchido durante o teste e enviado manualmente pelo participante.
 
+## Phase 17
+
+- `resolve-ai entrevistar` deve ser usado nos próximos testes com projetos do zero.
+- Validação agora deve observar se `validar` separa artefatos Resolve Aí de mudanças reais do produto.
+- Próximos testes precisam confirmar redução de falsos positivos em design tokens, Next.js e pastas auxiliares.
+
 ## Proximos passos
 
-Enviar a pasta `teste/` para participantes reais, coletar `teste/feedback.md` manualmente e priorizar Non-Technical Builder e Professional Engineer dedicado.
+Enviar a pasta `teste/` para participantes reais, coletar `teste/feedback.md` manualmente e priorizar Non-Technical Builder usando `resolve-ai entrevistar` e Professional Engineer dedicado.

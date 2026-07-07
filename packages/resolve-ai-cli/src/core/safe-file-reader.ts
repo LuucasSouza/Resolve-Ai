@@ -5,6 +5,12 @@ const MAX_TEXT_BYTES = 100 * 1024;
 const IGNORED_DIRS = new Set([
   "node_modules",
   ".git",
+  ".resolve-ai",
+  "teste",
+  "Resolve-Ai",
+  "resolve-ai",
+  "AI-SEOS",
+  "ai-seos",
   "dist",
   "build",
   "coverage",
@@ -21,6 +27,9 @@ export function isIgnoredDir(name: string): boolean {
 export function isSensitivePath(filePath: string): boolean {
   const normalized = filePath.toLowerCase().replace(/\\/g, "/");
   const base = path.basename(normalized);
+  const designToken = /(^|\/)(design-tokens?|theme-tokens?|style-tokens?)(\/|\.|-|$)/i.test(normalized);
+  const strongSecret = /(^|\/|[-_.])(secret|auth|api-key|credential|private|password|senha)([-_.]|\/|$)/i.test(normalized) || base === ".env" || base.startsWith(".env.");
+  if (designToken && !strongSecret) return false;
   return (
     base === ".env" ||
     base.startsWith(".env.") ||

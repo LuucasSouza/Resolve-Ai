@@ -24,7 +24,12 @@ function readDocIfSmall(filePath: string): string {
 }
 
 function hasCriticalRisk(input: PlanningInput, docsText: string): boolean {
-  const text = `${input.risks.join(" ")} ${docsText}`.toLowerCase();
+  const relevantDocLines = docsText
+    .split(/\r?\n/)
+    .filter((line) => /possível arquivo sensível|possivel arquivo sensivel|\.env|backup|credencial|secret|password|senha|dump/i.test(line))
+    .filter((line) => !/^#+\s*dados sensíveis envolvidos|^#+\s*dados sensiveis envolvidos|descrever apenas em alto nível|descrever apenas em alto nivel|não registrar|nao registrar|não usar dados sensíveis|nao usar dados sensiveis|não informado|nao informado|não há|nao ha|sem dados sensíveis|sem dados sensiveis/i.test(line.trim()))
+    .join(" ");
+  const text = `${input.risks.join(" ")} ${relevantDocLines}`.toLowerCase();
   const sensitiveSignals = ["senha", "segredo", "sensível", "sensivel", "secret", "token", "dados pessoais", "lgpd", "backup", ".env", "credencial", "dump"];
   return sensitiveSignals.some((word) => text.includes(word));
 }
@@ -35,7 +40,8 @@ export function buildPlanningInput(root: string, state: ResolveAiState | null): 
     .map((file) => `docs/resolve-ai/${file}`)
     .filter((relative) => fs.existsSync(path.join(root, relative)));
 
-  const hasDiagnosis = Boolean(state?.ultimoDiagnosticoEm) || existingDocs.length >= 3;
+  const hasInterview = Boolean(state?.ultimaEntrevista);
+  const hasDiagnosis = Boolean(state?.ultimoDiagnosticoEm) || hasInterview || existingDocs.length >= 3;
 
   return {
     projectType: state?.tipoProjeto ?? "indeterminado",
@@ -44,7 +50,9 @@ export function buildPlanningInput(root: string, state: ResolveAiState | null): 
     risks: state?.riscosDetectados ?? [],
     existingDocs,
     hasDiagnosis,
-    confidence: hasDiagnosis ? "media" : "baixa"
+    hasInterview,
+    interviewSummary: state?.ultimaEntrevista?.resumoCurto,
+    confidence: hasInterview ? "media" : hasDiagnosis ? "media" : "baixa"
   };
 }
 
@@ -59,12 +67,16 @@ export function readPlanningContext(root: string): string {
 export function createPlanningOutput(input: PlanningInput, docsText: string): PlanningOutput {
   const critical = hasCriticalRisk(input, docsText);
   const isNew = input.projectType === "novo";
-  const summary = input.hasDiagnosis
+  const summary = input.hasInterview
+    ? `Plano baseado na entrevista guiada. Ideia resumida: ${input.interviewSummary}.`
+    : input.hasDiagnosis
     ? `Plano baseado no diagnóstico local existente. Modo recomendado: ${input.recommendedMode}.`
     : "Plano básico de baixa confiança. Ainda não encontrei um diagnóstico anterior; rode `resolve-ai diagnosticar` para melhorar este plano.";
 
   const nextRecommendedAction = critical
     ? "Resolver riscos críticos antes de implementar qualquer feature nova."
+    : input.hasInterview
+      ? "Transformar a primeira versão útil em backlog pequeno e validável."
     : isNew
       ? "Definir escopo e MVP antes de criar código."
       : "Executar a Sprint A com foco em estabilização e validação.";

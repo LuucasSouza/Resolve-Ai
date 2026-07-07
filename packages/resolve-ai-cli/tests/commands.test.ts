@@ -34,7 +34,11 @@ test("ajuda mostra comandos principais", () => {
 
   assert.match(output, /Resolve Aí/);
   assert.match(output, /resolve-ai começar/);
+  assert.match(output, /resolve-ai entrevistar/);
   assert.match(output, /resolve-ai ligar/);
+  assert.match(output, /Fluxo recomendado:/);
+  assert.match(output, /npm link/);
+  assert.match(output, /Fallback via Node/);
 });
 
 test("documentacao recomenda npm link no Windows dentro do pacote", () => {

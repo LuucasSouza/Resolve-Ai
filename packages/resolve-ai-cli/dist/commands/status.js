@@ -8,6 +8,7 @@ function nextPriorityAction(state) {
   if (state.ultimaExecucaoAssistida?.proximoPasso) return state.ultimaExecucaoAssistida.proximoPasso;
   if (state.ultimoPreparo) return "Leia docs/resolve-ai/16-prompt-de-implementacao.md.";
   if (state.nextRecommendedAction) return state.nextRecommendedAction;
+  if (state.ultimaEntrevista?.proximaAcao) return state.ultimaEntrevista.proximaAcao;
   if (state.proximaAcao) return state.proximaAcao;
   return "revisar docs/resolve-ai/09-handoff.md";
 }
@@ -39,6 +40,14 @@ Próxima ação do diagnóstico: ${state.proximaAcao ?? "revisar docs/resolve-ai
 Último planejamento: ${state.lastPlanAt}
 Confiança do plano: ${state.planningConfidence ?? "não informada"}
 Próxima ação planejada: ${state.nextRecommendedAction ?? "revisar docs/resolve-ai/10-plano-de-continuacao.md"}
+`
+    : "";
+  const interviewSummary = state.ultimaEntrevista
+    ? `
+Entrevista: feita
+Última entrevista: ${state.ultimaEntrevista.executadaEm}
+Ideia: ${state.ultimaEntrevista.resumoCurto}
+Próxima ação da entrevista: ${state.ultimaEntrevista.proximaAcao}
 `
     : "";
   const preparedSummary = state.ultimoPreparo
@@ -74,6 +83,9 @@ Eu ainda não mexi no código.
     ? `
 Última validação: ${state.ultimaValidacao.status}
 Mudanças detectadas: ${state.ultimaValidacao.mudancasDetectadas} arquivo(s)
+Artefatos Resolve Aí: ${state.ultimaValidacao.artefatosResolveAi ?? 0}
+Arquivos do projeto: ${state.ultimaValidacao.arquivosProjeto ?? 0}
+Desconhecidos: ${state.ultimaValidacao.arquivosDesconhecidos ?? 0}
 Confiança: ${state.ultimaValidacao.confianca}
 Arquivos sensíveis: ${state.ultimaValidacao.arquivosSensiveisDetectados.length}
 Próxima ação: ${state.ultimaValidacao.proximaAcao}
@@ -90,6 +102,7 @@ Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 Próxima ação prioritária: ${nextAction}
 ${diagnosticSummary}
+${interviewSummary}
 ${planningSummary}
 ${preparedSummary}
 ${assistedExecutionSummary}
@@ -105,6 +118,7 @@ Estado: .resolve-ai/state.json
 Última atualização: ${state.lastUpdatedAt}
 Próxima ação prioritária: ${nextAction}
 ${diagnosticSummary}
+${interviewSummary}
 ${planningSummary}
 ${preparedSummary}
 ${assistedExecutionSummary}

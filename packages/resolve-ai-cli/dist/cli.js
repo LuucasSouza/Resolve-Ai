@@ -2,6 +2,7 @@ import { ajudaCommand } from "./commands/ajuda.js";
 import { comecarCommand } from "./commands/comecar.js";
 import { desligarCommand } from "./commands/desligar.js";
 import { diagnosticarCommand } from "./commands/diagnosticar.js";
+import { entrevistarCommand } from "./commands/entrevistar.js";
 import { ligarCommand } from "./commands/ligar.js";
 import { planejarCommand } from "./commands/planejar.js";
 import { prepararCommand } from "./commands/preparar.js";
@@ -31,6 +32,11 @@ export function run(argv= process.argv.slice(2), root= process.cwd()) {
       case "diagnostico":
       case "diagnóstico":
         diagnosticarCommand(root);
+        return 0;
+      case "entrevistar":
+      case "entrevista":
+      case "ideia":
+        entrevistarCommand(root, command);
         return 0;
       case "planejar":
       case "plano":

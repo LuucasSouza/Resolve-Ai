@@ -87,7 +87,40 @@ test("validar detecta mudancas Git", () => {
   const state = readState(root);
 
   assert.match(changes, /src\/app.ts/);
+  assert.match(changes, /Arquivos reais do projeto/);
   assert.equal(state.ultimaValidacao.arquivosAlterados.includes("src/app.ts"), true);
+  assert.equal(state.ultimaValidacao.arquivosProjeto >= 1, true);
+});
+
+test("validar separa apenas artefatos Resolve Ai", () => {
+  const root = tempProject("resolve-ai-validar-artifacts-");
+  execFileSync("git", ["init"], { cwd: root, stdio: "ignore" });
+  run(["começar"], root);
+  run(["ligar"], root);
+
+  run(["validar"], root);
+  const changes = fs.readFileSync(path.join(root, "docs", "resolve-ai", "26-mudancas-detectadas.md"), "utf8");
+  const state = readState(root);
+
+  assert.match(changes, /Artefatos Resolve Aí/);
+  assert.equal(state.ultimaValidacao.artefatosResolveAi > 0, true);
+  assert.equal(state.ultimaValidacao.arquivosProjeto, 0);
+});
+
+test("validar classifica arquivo real de projeto alterado", () => {
+  const root = tempProject("resolve-ai-validar-project-file-");
+  execFileSync("git", ["init"], { cwd: root, stdio: "ignore" });
+  preparedResolvedProject(root);
+  fs.mkdirSync(path.join(root, "src"), { recursive: true });
+  fs.writeFileSync(path.join(root, "src", "App.tsx"), "export function App(){ return null; }\n", "utf8");
+
+  run(["validar"], root);
+  const changes = fs.readFileSync(path.join(root, "docs", "resolve-ai", "26-mudancas-detectadas.md"), "utf8");
+  const state = readState(root);
+
+  assert.match(changes, /src\/App.tsx/);
+  assert.match(changes, /Arquivos reais do projeto/);
+  assert.equal(state.ultimaValidacao.arquivosProjeto > 0, true);
 });
 
 test("validar sem Git explica limite de comparacao", () => {
@@ -118,7 +151,22 @@ test("validar bloqueia arquivo sensivel por nome sem copiar conteudo", () => {
 
   assert.equal(state.ultimaValidacao.status, "bloqueada");
   assert.equal(state.ultimaValidacao.arquivosSensiveisDetectados.includes(".env"), true);
+  assert.equal(state.ultimaValidacao.arquivosSensiveisDetectados.some((file) => file.includes("backup")), false);
   assert.doesNotMatch(risk, /real-value-that-must-not-appear/);
+});
+
+test("validar mantem env e backup como sensiveis", () => {
+  const root = tempProject("resolve-ai-validar-env-backup-");
+  preparedResolvedProject(root);
+  fs.writeFileSync(path.join(root, ".env.local"), "TOKEN=nao-copiar\n", "utf8");
+  fs.writeFileSync(path.join(root, "backup-database.sql"), "secret dump\n", "utf8");
+
+  run(["validar"], root);
+  const state = readState(root);
+
+  assert.equal(state.ultimaValidacao.status, "bloqueada");
+  assert.equal(state.ultimaValidacao.arquivosSensiveisDetectados.includes(".env.local"), true);
+  assert.equal(state.ultimaValidacao.arquivosSensiveisDetectados.includes("backup-database.sql"), true);
 });
 
 test("validar preserva docs existentes", () => {

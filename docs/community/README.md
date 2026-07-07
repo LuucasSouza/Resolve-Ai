@@ -50,6 +50,12 @@ Community docs explain how to contribute protocols, templates, frameworks, playb
 - Participantes devem revisar e enviar o arquivo manualmente ao Lucas.
 - Nenhum envio automatico, workflow, GitHub Action ou telemetria foi criado.
 
+## Phase 17
+
+- Feedback deve observar se `resolve-ai entrevistar` ajuda projetos do zero.
+- Triagem deve separar bugs de entrevista, diagnóstico, validação e instalação Windows.
+- Feedback continua manual, sem telemetria ou envio automático.
+
 ## Feedback
 
 Feedback should be classified by type, severity, affected profile and owner before becoming an improvement item or ADR.

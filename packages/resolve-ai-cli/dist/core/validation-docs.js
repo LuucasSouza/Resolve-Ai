@@ -19,17 +19,36 @@ function list(items) {
 }
 
 function categoryList(result) {
+  const labels = {
+    "resolve-ai-artifact": "Artefatos Resolve Aí",
+    "project-file": "Arquivos reais do projeto",
+    "sensitive-path": "Possíveis sensíveis",
+    unknown: "Desconhecidos"
+  };
   return Object.entries(result.changeCategories)
-    .map(([category, files]) => `### ${category}\n\n${list(files)}`)
+    .map(([category, files]) => `### ${labels[category] ?? category}\n\n${list(files)}`)
     .join("\n\n");
+}
+
+function categorySummary(result) {
+  const artifacts = result.changeCategories["resolve-ai-artifact"]?.length ?? 0;
+  const project = result.changeCategories["project-file"]?.length ?? 0;
+  const sensitive = result.changeCategories["sensitive-path"]?.length ?? 0;
+  const unknown = result.changeCategories.unknown?.length ?? 0;
+  return `| Categoria | Quantidade | Observação |
+|---|---:|---|
+| Artefatos Resolve Aí | ${artifacts} | docs/resolve-ai/, .resolve-ai/, teste/ |
+| Código/configuração do projeto | ${project} | arquivos fora dos metadados Resolve Aí |
+| Possíveis sensíveis | ${sensitive} | por nome/caminho, sem conteúdo |
+| Desconhecidos | ${unknown} | revisar manualmente |`;
 }
 
 function content(file, result) {
   if (file === "25-relatorio-de-validacao.md") {
-    return front("25 — Relatório de Validação") + `# Relatório de Validação\n\n## Status\n\n${result.status}\n\n## Resumo\n\nValidação guiada gerada com confiança ${result.confianca}. Não executei testes, não alterei código e não fiz commit.\n\n## O que foi validado\n\n${list(result.evidence)}\n\n## O que não foi possível validar\n\n${list(result.notValidated)}\n\n## Evidências encontradas\n\n${list(result.docsReference)}\n\n## Principais alertas\n\n${list(result.riscosRestantes)}\n\n## Recomendação\n\n${result.status === "bloqueada" ? "Não recomendo commit agora." : "Revise manualmente antes de commitar."}\n\n## Próxima ação sugerida\n\n${result.proximaAcao}\n`;
+    return front("25 — Relatório de Validação") + `# Relatório de Validação\n\n## Status\n\n${result.status}\n\n## Resumo\n\nValidação guiada gerada com confiança ${result.confianca}. Não executei testes, não alterei código e não fiz commit.\n\n## Resumo por categoria\n\n${categorySummary(result)}\n\n## O que foi validado\n\n${list(result.evidence)}\n\n## O que não foi possível validar\n\n${list(result.notValidated)}\n\n## Evidências encontradas\n\n${list(result.docsReference)}\n\n## Principais alertas\n\n${list(result.riscosRestantes)}\n\n## Recomendação\n\n${result.status === "bloqueada" ? "Não recomendo commit agora." : "Revise manualmente antes de commitar."}\n\n## Próxima ação sugerida\n\n${result.proximaAcao}\n`;
   }
   if (file === "26-mudancas-detectadas.md") {
-    return front("26 — Mudanças Detectadas") + `# Mudanças Detectadas\n\n## Fonte da análise\n\n${result.gitAvailable ? "Git metadata local: git status --porcelain." : "Git metadata indisponível; validação limitada a metadados locais seguros."}\n\n## Arquivos alterados\n\n${list(result.arquivosAlterados)}\n\n## Classificação das mudanças\n\n${categoryList(result)}\n\n## Possíveis mudanças fora do escopo\n\n${list(result.possibleOutOfScope)}\n\n## Arquivos sensíveis detectados por nome/caminho\n\n${list(result.arquivosSensiveisDetectados)}\n\n## Observações\n\nConteúdo de arquivos sensíveis não foi lido nem copiado.\n`;
+    return front("26 — Mudanças Detectadas") + `# Mudanças Detectadas\n\n## Fonte da análise\n\n${result.gitAvailable ? "Git metadata local: git status --porcelain." : "Git metadata indisponível; validação limitada a metadados locais seguros. Não encontrei um repositório Git aqui. Para habilitar validação melhor, rode git init ou execute dentro de um repositório Git."}\n\n## Resumo por categoria\n\n${categorySummary(result)}\n\n## Arquivos alterados\n\n${list(result.arquivosAlterados)}\n\n## Classificação das mudanças\n\n${categoryList(result)}\n\n## Possíveis mudanças fora do escopo\n\n${list(result.possibleOutOfScope)}\n\n## Arquivos sensíveis detectados por nome/caminho\n\n${list(result.arquivosSensiveisDetectados)}\n\n## Observações\n\nConteúdo de arquivos sensíveis não foi lido nem copiado.\n\nArquivos em docs/resolve-ai/, .resolve-ai/ e teste/ são artefatos da própria ferramenta. Eles não significam, por si só, que o código do produto foi alterado.\n`;
   }
   if (file === "27-checklist-pos-execucao.md") {
     return front("27 — Checklist Pós-Execução") + `# Checklist Pós-Execução\n\n## Checklist técnico\n\n- [ ] O projeto compila?\n- [ ] Os testes relevantes foram executados manualmente?\n- [ ] A funcionalidade principal foi verificada manualmente?\n- [ ] Nenhum arquivo sensível foi adicionado?\n- [ ] A documentação necessária foi atualizada?\n- [ ] O diff foi revisado antes de commit?\n\n## Checklist de produto\n\n- [ ] O resultado resolve a tarefa preparada?\n- [ ] O comportamento esperado está claro?\n- [ ] Existe alguma regressão aparente?\n\n## Checklist de segurança\n\n- [ ] Nenhum segredo foi exposto?\n- [ ] Permissões continuam corretas?\n- [ ] Dados pessoais não foram adicionados indevidamente?\n- [ ] Arquivos sensíveis detectados foram removidos ou protegidos?\n`;

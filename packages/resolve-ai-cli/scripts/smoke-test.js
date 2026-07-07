@@ -24,6 +24,7 @@ function smokeEmptyProject() {
     assert(run(["ajuda"], root).includes("Resolve Aí"), "ajuda não retornou cabeçalho esperado");
     run(["começar"], root);
     run(["ligar"], root);
+    run(["entrevistar"], root);
     run(["diagnosticar"], root);
     run(["planejar"], root);
     run(["preparar"], root);

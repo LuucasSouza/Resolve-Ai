@@ -42,6 +42,7 @@ test("diagnosticar em diretorio vazio cria docs 00 a 09", () => {
 
   assert.match(output, /Diagnóstico concluído/);
   assert.match(output, /Tipo de projeto: novo/);
+  assert.match(output, /resolve-ai entrevistar/);
   assertDiagnosticDocs(root);
 });
 
@@ -87,7 +88,50 @@ test("diagnóstico alias detecta Vite React TypeScript fake", () => {
   assert.match(output, /React/);
   assert.match(output, /Vite/);
   assert.match(output, /TypeScript/);
+  assert.doesNotMatch(output, /Next\.js/);
   assert.match(output, /Professional Engineer/);
+});
+
+test("diagnosticar trata pasta com apenas teste como projeto novo", () => {
+  const root = tempProject("resolve-ai-only-test-folder-");
+  fs.mkdirSync(path.join(root, "teste"), { recursive: true });
+  fs.writeFileSync(path.join(root, "teste", "feedback.md"), "# Feedback\n", "utf8");
+
+  const output = run(["diagnosticar"], root);
+  const state = JSON.parse(fs.readFileSync(path.join(root, ".resolve-ai", "state.json"), "utf8"));
+
+  assert.match(output, /Tipo de projeto: novo/);
+  assert.match(output, /resolve-ai entrevistar/);
+  assert.equal(state.tipoProjeto, "novo");
+});
+
+test("diagnosticar ignora repo Resolve-Ai interno", () => {
+  const root = tempProject("resolve-ai-nested-repo-");
+  fs.mkdirSync(path.join(root, "Resolve-Ai"), { recursive: true });
+  fs.writeFileSync(path.join(root, "Resolve-Ai", "package.json"), JSON.stringify({
+    dependencies: { next: "latest", react: "latest" },
+    scripts: { dev: "next dev" }
+  }), "utf8");
+
+  const output = run(["diagnosticar"], root);
+  const state = JSON.parse(fs.readFileSync(path.join(root, ".resolve-ai", "state.json"), "utf8"));
+
+  assert.match(output, /Tipo de projeto: novo/);
+  assert.doesNotMatch(output, /Next\.js/);
+  assert.deepEqual(state.stackDetectada, []);
+});
+
+test("diagnosticar nao trata design tokens como segredo critico", () => {
+  const root = tempProject("resolve-ai-design-tokens-");
+  fs.mkdirSync(path.join(root, "src"), { recursive: true });
+  fs.writeFileSync(path.join(root, "src", "design-tokens.css"), ":root { --color: red; }\n", "utf8");
+
+  run(["diagnosticar"], root);
+  const state = JSON.parse(fs.readFileSync(path.join(root, ".resolve-ai", "state.json"), "utf8"));
+  const risk = fs.readFileSync(path.join(root, "docs", "resolve-ai", "05-risk-register.md"), "utf8");
+
+  assert.equal(state.riscosDetectados.some((item) => item.includes("design-tokens.css")), false);
+  assert.doesNotMatch(risk, /design-tokens\.css/);
 });
 
 test("diagnosticar registra stack provavel nos docs e status", () => {

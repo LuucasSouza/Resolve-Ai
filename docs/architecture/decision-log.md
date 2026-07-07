@@ -172,3 +172,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0228 | Require Participant-Controlled Feedback Sharing | Accepted | 2026-07-05 | Medium | Phase 16 |
 | ADR-0229 | Keep Test Folder Separate From Runtime CLI | Accepted | 2026-07-05 | High | Phase 16 |
 | ADR-0230 | Defer GitHub Feedback Automation | Accepted | 2026-07-05 | High | Phase 16 |
+| ADR-0236 | Adopt Guided Discovery Interview for Empty Projects | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0237 | Add entrevistar, entrevista, and ideia Commands | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0238 | Populate Intake, Discovery and Product Definition from Interview | Accepted | 2026-07-06 | Medium | Phase 17 |
+| ADR-0239 | Preserve Existing Human Content During Interview Writes | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0240 | Recommend Interview When Project Appears Empty | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0241 | Separate Resolve Aí Artifacts from Product Changes in Validation | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0242 | Reduce Design Token False Positives | Accepted | 2026-07-06 | Medium | Phase 17 |
+| ADR-0243 | Require Strong Evidence Before Detecting Next.js | Accepted | 2026-07-06 | Medium | Phase 17 |
+| ADR-0244 | Document Windows PATH and Node Fallback More Clearly | Accepted | 2026-07-06 | High | Phase 17 |
+| ADR-0245 | Keep Guided Interview Local and Non-Telemetric | Accepted | 2026-07-06 | High | Phase 17 |

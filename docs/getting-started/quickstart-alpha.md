@@ -8,6 +8,8 @@ Resolve Ai e uma CLI local para organizar uma ideia ou projeto antes de pedir co
 
 Ele cria contexto em `docs/resolve-ai/`, diagnostica stack provavel, monta plano, prepara tarefa, cria pacote de execucao assistida e valida mudancas locais de forma segura.
 
+Para projeto vazio ou ideia nova, use `resolve-ai entrevistar` antes de planejar.
+
 ## 3. O que ele ainda nao faz?
 
 Ele nao publica, nao faz deploy, nao comita, nao chama APIs externas, nao coleta telemetria e nao executa tarefas automaticamente.
@@ -35,6 +37,7 @@ Entre no projeto que voce quer organizar e rode:
 ```bash
 resolve-ai começar
 resolve-ai ligar
+resolve-ai entrevistar
 resolve-ai diagnosticar
 resolve-ai planejar
 resolve-ai preparar

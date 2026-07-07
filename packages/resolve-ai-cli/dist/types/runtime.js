@@ -33,6 +33,7 @@
   ultimoPreparo?: PreparedTaskState;
   ultimaExecucaoAssistida?: AssistedExecutionState;
   ultimaValidacao?: ValidationState;
+  ultimaEntrevista?: InterviewState;
 }
 
   createdPaths: string[];
@@ -69,7 +70,41 @@
   risks: string[];
   existingDocs: string[];
   hasDiagnosis: boolean;
+  hasInterview: boolean;
+  interviewSummary?: string;
   confidence: "baixa" | "media" | "alta";
+}
+
+  problema: string;
+  publico: string;
+  usuarios: string;
+  tipoProduto: string;
+  estrategia: string;
+  mvp: string;
+  foraDeEscopo: string;
+  stackPreferida: string;
+  stackEvitada: string;
+  restricoes: string;
+  dadosSensiveis: string;
+  criterioSucesso: string;
+  modoTrabalho: string;
+}
+
+  versaoFluxo: "phase-17-guided-discovery-interview";
+  tipo: "guided-discovery-interview";
+  tipoProjeto: "projeto-do-zero";
+  modoRecomendado: "Projeto do Zero";
+  confianca: "baixa" | "media" | "alta";
+  resumoCurto: string;
+  respostas: InterviewAnswers;
+  documentosAtualizados: string[];
+  proximaAcao: "resolve-ai planejar";
+}
+
+  created: string[];
+  updated: string[];
+  preserved: string[];
+  interactive: boolean;
 }
 
   nextRecommendedAction: string;
@@ -134,6 +169,9 @@
   mudancasDetectadas: number;
   arquivosAlterados: string[];
   arquivosSensiveisDetectados: string[];
+  artefatosResolveAi?: number;
+  arquivosProjeto?: number;
+  arquivosDesconhecidos?: number;
   riscosRestantes: string[];
   proximaAcao: string;
 }

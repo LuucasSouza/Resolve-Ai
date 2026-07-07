@@ -159,8 +159,16 @@ node packages/resolve-ai-cli/dist/index.js ajuda
 Para usar como comando local antes de publicação npm:
 
 ```bash
-npm link --prefix packages/resolve-ai-cli
+cd packages/resolve-ai-cli
+npm link
+cd ../..
 resolve-ai ajuda
+```
+
+Se o comando global não funcionar, use o fallback via Node:
+
+```bash
+node packages/resolve-ai-cli/dist/index.js ajuda
 ```
 
 Guia completo: `docs/getting-started/install-local-cli.md`.
@@ -270,7 +278,7 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Phase 16 concluída — LIMITED GO operacional**
+Status atual: **Phase 17 concluída — LIMITED GO**
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -555,7 +563,19 @@ Essa pasta pode ser copiada para dentro de outro projeto e inclui:
 
 A pasta `teste/` nao envia nada automaticamente, nao cria GitHub Actions, nao adiciona telemetria e nao altera o comportamento da CLI.
 
-Próxima ação: **enviar `teste/` para participantes reais e coletar `teste/feedback.md` manualmente**.
+Phase 17 implementou entrevista guiada e correções de validação:
+
+- novo comando `resolve-ai entrevistar`;
+- aliases `resolve-ai entrevista` e `resolve-ai ideia`;
+- projeto vazio/do zero passa a recomendar entrevista antes de planejar;
+- `validar` separa artefatos Resolve Aí, arquivos reais do projeto, possíveis sensíveis e desconhecidos;
+- falsos positivos de `design-tokens.css` e Next.js em Vite puro reduzidos;
+- `ajuda` agora mostra fluxo recomendado, dependência leve entre comandos e fallback Windows/Node;
+- readiness score recalibrado: 84/100, LIMITED GO;
+- ADRs 0236 a 0245;
+- relatório de validação em `docs/sprints/phase-17-guided-discovery-interview-validation-report.md`.
+
+Próxima ação: **executar teste real com Non-Technical Builder usando `resolve-ai entrevistar`**.
 
 ---
 

@@ -15,7 +15,7 @@ function listRoot(root) {
 
 function listRelevantDirs(root) {
   return ["src", "app", "pages", "components", "lib", "services", "functions", "server", "api", "routes", "controllers", "prisma", "supabase"]
-    .filter((dir) => exists(root, dir));
+    .filter((dir) => exists(root, dir) && !isIgnoredDir(dir));
 }
 
 function packageJson(root) {
@@ -109,8 +109,10 @@ function detectStackDetails(root, pkg) {
     exists(root, "next.config.js") ? "next.config.js encontrado" : "",
     exists(root, "next.config.mjs") ? "next.config.mjs encontrado" : "",
     exists(root, "next.config.ts") ? "next.config.ts encontrado" : "",
-    exists(root, "app") ? "diretório app encontrado" : "",
-    exists(root, "pages") ? "diretório pages encontrado" : ""
+    exists(root, ".next") ? ".next encontrado" : "",
+    scriptIncludes("next dev") ? "script npm com next dev encontrado" : "",
+    scriptIncludes("next build") ? "script npm com next build encontrado" : "",
+    scriptIncludes("next start") ? "script npm com next start encontrado" : ""
   ]);
 
   addStack(stack, "Firebase", [
@@ -184,6 +186,7 @@ export function inspectProject(root= process.cwd()) {
   const rootEntries = listRoot(root);
   const projectEntries = rootEntries.filter((name) => {
     if (name === "docs" && fs.existsSync(path.join(root, "docs", "resolve-ai"))) return false;
+    if (isIgnoredDir(name)) return false;
     return true;
   });
   const relevantDirs = listRelevantDirs(root);
@@ -209,7 +212,7 @@ export function inspectProject(root= process.cwd()) {
   for (const risk of risks) attentionPoints.push(risk);
 
   let projectType = "indeterminado";
-  if (fs.existsSync(paths.legacyDocsDir) || rootEntries.some((name) => /^(legacy|old|backup|deprecated)$/i.test(name))) {
+  if (fs.existsSync(paths.legacyDocsDir) || projectEntries.some((name) => /^(legacy|old|backup|deprecated)$/i.test(name))) {
     projectType = "legado";
   } else if (!pkg && relevantDirs.length === 0 && projectEntries.filter((name) => !name.startsWith(".")).length === 0) {
     projectType = "novo";

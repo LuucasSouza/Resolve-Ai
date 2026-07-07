@@ -44,12 +44,15 @@ function content(file, detection, root) {
   const stack = stackSummary(detection);
   const risks = detection.risks.length ? detection.risks : ["Nenhum risco sensível detectado por nome no diagnóstico automático."];
   const intro = "Este diagnóstico é heurístico e local. Use como contexto inicial, não como verdade absoluta.";
+  const zeroProjectNotice = detection.projectType === "novo"
+    ? "\n\n## Projeto do zero\n\nEsse projeto parece estar começando do zero. Em vez de tentar adivinhar, recomendo rodar:\n\n```bash\nresolve-ai entrevistar\n```\n\nDiagnóstico por arquivos tem baixa confiança quando ainda não há estrutura. Ausência de testes, CI ou Git não é problema crítico por si só nesse estágio.\n"
+    : "";
 
   switch (file) {
     case "00-project-intake.md":
       return frontMatter("00 — Project Intake", detection.generatedAt) + `# 00 — Project Intake\n\n${intro}\n\n## Nome do projeto\n\n${path.basename(root)}\n\n## Caminho analisado\n\n${root}\n\n## Tipo de projeto detectado\n\n${detection.projectType}\n\n## Modo recomendado\n\n${detection.recommendedMode}\n\n## Fluxo recomendado\n\n${detection.recommendedFlow}\n\n## Objetivo aparente\n\nInferido por heurística. Não identificado com segurança no diagnóstico automático.\n\n## Incertezas\n\n${list(detection.attentionPoints)}\n\n## Recomendação\n\n${explainRecommendation(detection)}\n`;
     case "01-current-state-assessment.md":
-      return frontMatter("01 — Current State Assessment", detection.generatedAt) + `# 01 — Current State Assessment\n\n## Stack provável\n\n${stackTable(detection)}\n\n## Sinais encontrados\n\n${list(detection.signals)}\n\n## Pontos fortes\n\n${list(detection.strengths)}\n\n## Pontos frágeis\n\n${list(detection.attentionPoints)}\n\n## Confiança\n\n${detection.confidence}\n\n## Maturidade\n\n${detection.maturity}/5\n`;
+      return frontMatter("01 — Current State Assessment", detection.generatedAt) + `# 01 — Current State Assessment\n\n## Stack provável\n\n${stackTable(detection)}\n\n## Sinais encontrados\n\n${list(detection.signals)}\n\n## Pontos fortes\n\n${list(detection.strengths)}\n\n## Pontos frágeis\n\n${list(detection.attentionPoints)}${zeroProjectNotice}\n\n## Confiança\n\n${detection.confidence}\n\n## Maturidade\n\n${detection.maturity}/5\n`;
     case "02-discovery.md":
       return frontMatter("02 — Discovery", detection.generatedAt) + `# 02 — Discovery\n\n## Problema de negócio inferido\n\nNão identificado no diagnóstico automático.\n\n## Usuários prováveis\n\nInferido por heurística. Validar com o usuário antes de implementar.\n\n## Hipóteses\n\n- O projeto precisa de diagnóstico humano/IA mais profundo antes de novas mudanças.\n- O próximo passo deve reduzir ambiguidade.\n\n## Métricas de sucesso sugeridas\n\n- Clareza de objetivo.\n- Backlog priorizado.\n- Riscos críticos tratados.\n`;
     case "03-product-definition.md":
