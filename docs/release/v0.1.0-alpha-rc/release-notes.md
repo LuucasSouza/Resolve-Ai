@@ -1,10 +1,10 @@
 ---
 title: "Release Notes — v0.1.0-alpha.0"
-status: "Release Candidate"
+status: "Published — Public Alpha"
 version: "0.1.0-alpha.0"
-phase: "Phase 18"
+phase: "Phase 19"
 owner: "Resolve Aí Maintainers"
-last_updated: "2026-07-07"
+last_updated: "2026-07-08"
 ---
 
 # Release Notes — Resolve Aí v0.1.0-alpha.0
@@ -15,7 +15,7 @@ O Resolve Aí é uma CLI local, em português, que transforma um problema, uma i
 
 ## 2. Status
 
-**Alpha / Release Candidate.** Esta versão não é stable, não é production ready e ainda busca feedback real de usuários iniciantes. A publicação pública depende de aprovação explícita do mantenedor.
+**Public Alpha — publicada.** Esta versão está publicada no npm como alpha pública (dist-tag `alpha`), com aprovação explícita do mantenedor. **Ainda não é stable**, não é production ready e busca feedback real de usuários iniciantes.
 
 ## 3. O que esta versão faz
 
@@ -83,9 +83,24 @@ Você continua no controle.
 - Arquivos sensíveis (`.env`, backups, secrets) são detectados por nome/caminho, nunca copiados.
 - Comandos são não destrutivos e não sobrescrevem documentos existentes por padrão.
 
-## 8. Como instalar localmente
+## 8. Como instalar
 
-Enquanto o pacote não estiver publicado no npm:
+Instalação alpha pública:
+
+```bash
+npm install -g resolve-ai@alpha
+resolve-ai ajuda
+```
+
+Ou sem instalar globalmente:
+
+```bash
+npx resolve-ai@alpha ajuda
+```
+
+Esta versão está publicada como alpha pública: https://www.npmjs.com/package/resolve-ai — **ainda não é stable**.
+
+Alternativa para desenvolvimento (a partir do código-fonte):
 
 ```bash
 git clone https://github.com/LuucasSouza/Resolve-Ai.git
@@ -96,15 +111,6 @@ npm link
 cd ../..
 resolve-ai ajuda
 ```
-
-Se a publicação alpha futura acontecer (após aprovação do mantenedor):
-
-```bash
-npm install -g resolve-ai@alpha
-resolve-ai ajuda
-```
-
-Esta versão ainda **não** está publicada no npm.
 
 ## 9. Como testar via Node (fallback)
 
