@@ -104,6 +104,13 @@ Maintainers devem executar ou revisar cenarios, registrar achados, classificar s
 - Risco público aparece em português (baixo, médio, alto, crítico) e `Confiança: baixa` vem com explicação.
 - Relatório: `../sprints/phase-17b-non-technical-builder-ux-validation-report.md`.
 
+## Phase 18
+
+- Nenhuma validação humana real adicional aconteceu nesta fase; a lacuna está registrada abertamente nos documentos de release.
+- O release candidate está pronto em `../release/v0.1.0-alpha-rc/`, mas a publicação aguarda o gate do mantenedor.
+- Score travado em 90/100 (RELEASE CANDIDATE READY): não pode subir sem sessões reais de Non-Technical Builder e Professional Engineer dedicado.
+- Plano de feedback pós-release (manual, sem telemetria): `../release/v0.1.0-alpha-rc/post-release-feedback-plan.md`.
+
 ## Proximos passos
 
-Enviar a pasta `teste/` para participantes reais, coletar `teste/feedback.md` manualmente e priorizar Non-Technical Builder usando `resolve-ai entrevistar` e Professional Engineer dedicado.
+Enviar a pasta `teste/` para participantes reais, coletar `teste/feedback.md` manualmente e priorizar Non-Technical Builder usando `resolve-ai entrevistar` e Professional Engineer dedicado. A validação real pode acontecer em paralelo com a revisão do maintainer approval gate.

@@ -1,9 +1,9 @@
 ---
 title: "Resolve Aí — README"
-version: "0.1.0"
-status: "Draft"
+version: "0.1.0-alpha.0"
+status: "Alpha — Release Candidate"
 owner: "AI-SEOS Core Maintainers"
-last_updated: "2026-07-03"
+last_updated: "2026-07-07"
 document_type: "Public Project Overview"
 canonical_filename: "README.md"
 recommended_repository_location: "/README.md"
@@ -14,6 +14,8 @@ recommended_repository_location: "/README.md"
 > Me dá o problema ou a ideia, e eu te ajudo a resolver.
 
 **Resolve Aí** é um framework open source para transformar problemas, ideias e projetos existentes em planos claros de software usando IA.
+
+> **Status: Alpha — Release Candidate.** Esta versão não é stable, não é production ready e ainda busca feedback real de usuários iniciantes. O Resolve Aí não executa código automaticamente: o comando `resolver` prepara um pacote de execução assistida e você continua no controle. Limitações conhecidas: `docs/release/v0.1.0-alpha-rc/known-limitations.md`.
 
 Ele ajuda pessoas não técnicas, vibe coders e engenheiros profissionais a sair da confusão antes de pedir para a IA escrever código.
 
@@ -145,6 +147,7 @@ O CLI MVP já existe em `packages/resolve-ai-cli/` e pode ser executado localmen
 ```bash
 npm run build --prefix packages/resolve-ai-cli
 node packages/resolve-ai-cli/dist/index.js começar
+node packages/resolve-ai-cli/dist/index.js entrevistar
 node packages/resolve-ai-cli/dist/index.js diagnosticar
 node packages/resolve-ai-cli/dist/index.js planejar
 node packages/resolve-ai-cli/dist/index.js preparar
@@ -278,7 +281,9 @@ Ao terminar, valide os critérios de aceite e gere o relatório final da Sprint 
 
 ## Status do projeto
 
-Status atual: **Phase 17 concluída — LIMITED GO**
+Status atual: **Phase 18 concluída — RELEASE CANDIDATE READY (90/100), aguardando aprovação do mantenedor**
+
+Esta versão continua **alpha**: não está publicada no npm, não tem tag de release e não foi validada por usuários iniciantes reais em escala suficiente. Nenhuma publicação acontece sem o gate `docs/release/v0.1.0-alpha-rc/maintainer-approval-gate.md`.
 
 Sprint 1 criou a primeira camada funcional do AI-SEOS:
 
@@ -589,7 +594,18 @@ Phase 17B refinou consistência de estado e UX para Non-Technical Builder:
 - ADRs 0246 a 0255;
 - relatório de validação em `docs/sprints/phase-17b-non-technical-builder-ux-validation-report.md`.
 
-Próxima ação: **executar teste real com Non-Technical Builder usando o fluxo Controle Simples de Gastos e o kit `teste/` atualizado**.
+Phase 18 preparou o release candidate do alpha público:
+
+- diretório canônico de release `docs/release/v0.1.0-alpha-rc/` com release notes, known limitations, auditoria de pacote, checklists de npm/tag/distribuição, rollback plan, feedback plan e gate do mantenedor;
+- `npm pack --dry-run` auditado: 37 arquivos, 38.5 kB, sem artefatos locais ou dados sensíveis;
+- decisão de publicação registrada: NÃO PUBLICADO, pronto para aprovação;
+- nenhuma publicação, tag ou GitHub Release executados;
+- comportamento da CLI inalterado; 87/87 testes e smoke passando;
+- readiness score: 90/100, RELEASE CANDIDATE READY (teto sem validação humana real);
+- ADRs 0256 a 0265;
+- relatório de validação em `docs/sprints/phase-18-public-alpha-rc-validation-report.md`.
+
+Próxima ação: **mantenedor revisar `docs/release/v0.1.0-alpha-rc/maintainer-approval-gate.md` e, em paralelo, executar teste real com Non-Technical Builder usando o fluxo Controle Simples de Gastos e o kit `teste/`**.
 
 ---
 

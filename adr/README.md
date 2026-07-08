@@ -279,7 +279,18 @@ Architecture Maintainers garantem numeração, consistência e referências entr
 - `0253-update-test-kit-to-include-interview-flow.md`
 - `0254-keep-git-initialization-as-guidance-not-blocking-step.md`
 - `0255-preserve-professional-mode-while-simplifying-beginner-ux.md`
+- `0256-adopt-public-alpha-release-candidate-gate.md`
+- `0257-require-maintainer-approval-before-npm-publish.md`
+- `0258-use-alpha-dist-tag-for-npm-publication.md`
+- `0259-document-known-limitations-before-public-release.md`
+- `0260-prepare-github-release-draft-without-creating-release.md`
+- `0261-adopt-manual-feedback-loop-for-public-alpha.md`
+- `0262-define-rollback-plan-for-alpha-publication.md`
+- `0263-keep-human-validation-gap-visible-in-release-docs.md`
+- `0264-require-package-dry-run-audit-before-publication.md`
+- `0265-classify-phase-18-as-release-candidate-not-stable.md`
 
 ## Próximos passos
 
+- Maintainer review of `docs/release/v0.1.0-alpha-rc/maintainer-approval-gate.md` (Phase 19 vs Phase 18B).
 - Run real Non-Technical Builder validation using the Controle Simples de Gastos flow and the updated `teste/` kit.

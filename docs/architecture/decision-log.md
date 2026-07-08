@@ -192,3 +192,13 @@ source: "bootstrap-source/pt27_ARCHITECTURE_DECISION_PROTOCOL.md"
 | ADR-0253 | Update Test Kit to Include Interview Flow | Accepted | 2026-07-07 | Medium | Phase 17B |
 | ADR-0254 | Keep Git Initialization as Guidance, Not Blocking Step | Accepted | 2026-07-07 | High | Phase 17B |
 | ADR-0255 | Preserve Professional Mode While Simplifying Beginner UX | Accepted | 2026-07-07 | High | Phase 17B |
+| ADR-0256 | Adopt Public Alpha Release Candidate Gate | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0257 | Require Maintainer Approval Before npm Publish | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0258 | Use Alpha Dist-Tag for npm Publication | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0259 | Document Known Limitations Before Public Release | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0260 | Prepare GitHub Release Draft Without Creating Release | Accepted | 2026-07-07 | Medium | Phase 18 |
+| ADR-0261 | Adopt Manual Feedback Loop for Public Alpha | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0262 | Define Rollback Plan for Alpha Publication | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0263 | Keep Human Validation Gap Visible in Release Docs | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0264 | Require Package Dry-Run Audit Before Publication | Accepted | 2026-07-07 | High | Phase 18 |
+| ADR-0265 | Classify Phase 18 as Release Candidate, Not Stable | Accepted | 2026-07-07 | High | Phase 18 |

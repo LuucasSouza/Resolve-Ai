@@ -733,9 +733,34 @@ Corrigir as inconsistências de estado e UX encontradas no teste limpo pós-Phas
 
 ---
 
+# Phase 18 — Public Alpha Release Candidate & Maintainer Approval Gate
+
+Status: **Complete**
+
+## Objetivo
+
+Preparar o Resolve Aí para uma decisão final de publicação alpha pública, com documentação completa de release e gate explícito de aprovação do mantenedor, sem publicar nada e sem declarar stable.
+
+## Entregas
+
+- Diretório canônico `docs/release/v0.1.0-alpha-rc/` com release notes, known limitations, auditoria de pacote, checklists de npm/tag/distribuição, rollback plan, feedback plan e maintainer approval gate.
+- `npm pack --dry-run` auditado e aprovado: 37 arquivos, 38.5 kB, sem artefatos locais ou dados sensíveis.
+- Decisão de publicação: NÃO PUBLICADO, pronto para aprovação.
+- Nenhuma tag, GitHub Release ou `npm publish` executados.
+- Comportamento da CLI inalterado; 87/87 testes, smoke e `git diff --check` passando.
+- Score: 90/100, RELEASE CANDIDATE READY (teto sem validação humana real).
+- ADRs 0256 a 0265.
+
+## Próximo passo
+
+- Mantenedor aprova o gate → **Phase 19 — Public Alpha Publication Execution**.
+- Problemas na revisão → **Phase 18B — Release Candidate Fixes**.
+
+---
+
 # Manual Action — Recruit Remaining Private Alpha Participants
 
-Status: **Next**
+Status: **Next (em paralelo com a decisão do mantenedor)**
 
 ## Objetivo
 

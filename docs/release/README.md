@@ -70,6 +70,25 @@ Release documentation covers readiness, known limitations, release notes, reposi
 - `v0.1.0-alpha-phase-17b-readiness-scorecard.md`
 - `v0.1.0-alpha-phase-17b-go-no-go-decision.md`
 
+## Phase 18
+
+- `v0.1.0-alpha-phase-18-readiness-scorecard.md`
+- `v0.1.0-alpha-phase-18-go-no-go-decision.md`
+- `v0.1.0-alpha-rc/` — **diretório canônico do release candidate**, com:
+  - `README.md` (índice)
+  - `release-candidate-checklist.md`
+  - `release-notes.md`
+  - `known-limitations.md`
+  - `npm-package-audit.md`
+  - `npm-publication-checklist.md`
+  - `npm-publication-decision.md`
+  - `github-release-draft.md`
+  - `git-tag-checklist.md`
+  - `distribution-checklist.md`
+  - `rollback-plan.md`
+  - `post-release-feedback-plan.md`
+  - `maintainer-approval-gate.md`
+
 ## Current Recommendation
 
-Resolve Ai remains a LIMITED GO alpha candidate with score 88/100 (muito forte) after Phase 17B. Do not publish to npm until Non-Technical Builder and dedicated Professional Engineer validation are complete and maintainer approval is recorded. Without additional real human validation, do not declare stable.
+Resolve Aí is at 90/100 — RELEASE CANDIDATE READY after Phase 18, the maximum score allowed without additional real human validation. Nothing has been published: no npm publish, no Git tag, no GitHub release. Publication requires every checkbox in `v0.1.0-alpha-rc/maintainer-approval-gate.md` to be marked by the maintainer. Without additional real human validation (Non-Technical Builder and dedicated Professional Engineer), do not declare stable. For release documents, `v0.1.0-alpha-rc/` supersedes the drafts from Phases 12–15B.

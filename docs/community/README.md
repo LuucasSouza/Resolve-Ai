@@ -62,6 +62,13 @@ Community docs explain how to contribute protocols, templates, frameworks, playb
 - Triagem deve observar consistência entre comandos (entrevista reconhecida, próxima ação única, risco em português).
 - Feedback continua manual e controlado pelo participante.
 
+## Phase 18
+
+- Release candidate preparado; se a publicação alpha for aprovada, o feedback público seguirá `docs/release/v0.1.0-alpha-rc/post-release-feedback-plan.md`.
+- Fontes: GitHub Issues (templates existentes) e `teste/feedback.md` manual. Sem telemetria, sem envio automático.
+- Nunca pedir `.env`, tokens, senhas, chaves de API, backups ou dados de clientes.
+- Triagem interna P0–P4 continua; jargão não deve ser exposto a usuário iniciante.
+
 ## Feedback
 
 Feedback should be classified by type, severity, affected profile and owner before becoming an improvement item or ADR.

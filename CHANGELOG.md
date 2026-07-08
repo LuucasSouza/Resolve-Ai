@@ -1,9 +1,9 @@
 ---
 title: "AI-SEOS — Changelog"
-version: "0.1.0"
+version: "0.1.0-alpha.0"
 status: "Draft"
 owner: "AI-SEOS Maintainers"
-last_updated: "2026-07-03"
+last_updated: "2026-07-07"
 document_type: "Changelog"
 canonical_filename: "CHANGELOG.md"
 recommended_repository_location: "/CHANGELOG.md"
@@ -20,6 +20,21 @@ O formato segue a ideia do Keep a Changelog e o projeto deve adotar versionament
 # [Unreleased]
 
 ## Added
+
+- Phase 18 executada: Public Alpha Release Candidate & Maintainer Approval Gate.
+- Criado diretório canônico de release `docs/release/v0.1.0-alpha-rc/` com 13 artefatos: README, release-candidate-checklist, npm-publication-checklist, npm-package-audit, npm-publication-decision, github-release-draft, git-tag-checklist, release-notes, known-limitations, rollback-plan, post-release-feedback-plan, distribution-checklist e maintainer-approval-gate.
+- Auditoria do `npm pack --dry-run` registrada: 37 arquivos, 38.5 kB (147.1 kB descompactado), somente `dist/`, `README.md` e `package.json`; sem `.resolve-ai/`, `docs/resolve-ai/`, `.env` ou feedbacks privados. Decisão: aprovado.
+- Criados scorecard e decisão da Phase 18 em `docs/release/`: 90/100 — RELEASE CANDIDATE READY, aguardando aprovação do mantenedor (teto sem validação humana real).
+- Criados Phase 18 handoff, validation report e retrospective em `docs/sprints/`.
+- Criadas ADRs 0256 a 0265.
+- Preservados `pt271` a `pt280` em `bootstrap-source/`.
+
+## Changed (Phase 18)
+
+- README atualizado para status Alpha — Release Candidate, com aviso público de não-stable, fluxo com `entrevistar` e ponteiro para known limitations.
+- `docs/release/README.md`, `docs/alpha-validation/README.md` e `docs/community/README.md` atualizados com a Phase 18.
+- ROADMAP atualizado com a Phase 18 concluída e a decisão pendente do mantenedor (Phase 19 vs Phase 18B).
+- Nenhuma publicação npm, tag Git ou GitHub Release executados; comportamento da CLI inalterado (87/87 testes, smoke e `git diff --check` passando).
 
 - Phase 17B executada com foco em consistência de estado e UX para Non-Technical Builder.
 - Criada camada central de contexto derivado (`runtime-context.ts`) com motor de próxima ação prioritária única.
